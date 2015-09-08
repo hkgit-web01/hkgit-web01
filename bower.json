@@ -1,0 +1,21 @@
+{
+  "name": "hkgit-web01",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hkgit-web01/hkgit-web01",
+  "authors": [
+    "HK Yoon <hkzuuu@gmail.com>"
+  ],
+  "description": "Website Project 01",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4"
+  }
+}
