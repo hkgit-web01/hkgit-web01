@@ -48,9 +48,32 @@ nav li {
 	margin:0;
 	padding:0;
 	text-align:center;
-
+	
 	margin-top:0.8em;
 }
+
+/* MAIN */
+
+main {
+  position: relative;
+  width: 95%;
+  margin:0 auto;
+  margin-top:-80px;
+  padding: 10px 20px;
+  box-sizing: border-box; 
+  background-color:white;
+  z-index:-10;
+}
+
+main .pwd .arrow{
+	display:inline-block;
+	width:12px;
+	margin:0 10px;
+	vertical-align: 0;
+	height:12px;
+	background: url("../imgs/arrow.svg") no-repeat;
+}
+
 
 /* JUMBOTRON */
 
@@ -71,6 +94,18 @@ nav li {
 	height:400px;
 
 }
+
+/* MISC */
+
+hr {
+
+}
+
+
+article img {
+	width:100%;
+}
+
 
 /* MEDIA QUERIES */
 /* Larger than mobile */
