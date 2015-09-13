@@ -13,17 +13,18 @@
 /* HEADER */
 
 header {
-	position:absolute;
+	position:fixed;
 	width:100%;
+	z-index:9999;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-header:hover .logo {
+header:hover .logo img {
 	transform:translateY(15px);
 }
 
 header:hover .logo p {
-	top:75px;
+	top:90px;
 	color:white;
 }
 
@@ -46,7 +47,6 @@ header .logo {
 	height:100px;
 	background-color: #2D2D2D;
 	text-align:center;
-	transition: transform 0.4s;
 }
 
 header .logo p {
@@ -63,6 +63,7 @@ header .logo p {
 header .logo img {
 	width:90%;
 	margin-top:8px;
+	transition: transform 0.4s;
 }
 
 /* NAVIGATION */
@@ -117,13 +118,13 @@ nav .subNav .subNavContainer ul {
 	vertical-align: top;
 	margin-top:0;
 	padding-top:1em;
-	color:#898989;
+	color:#666666;
 }
 
 nav .subNav .subNavContainer ul:hover {
 
 	border-top:1px solid white;
-	color:#E8E8E8;
+	color:#C1C1C1;
 }
 
 nav .subNav .subNavContainer ul li {
@@ -133,7 +134,7 @@ nav .subNav .subNavContainer ul li {
 }
 
 nav .subNav .subNavContainer ul li:hover {
-
+	color:white;
 }
 
 
