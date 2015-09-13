@@ -1,27 +1,55 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* LANGUAGE */
+
+.kr {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
 .container {
 	max-width: 1280px;
 }
 
-/* NAVIGATION */
+/* HEADER */
 
-nav {
-	background-color: #E8E8E8;
-	background-color: white;
-	border-bottom: 1px solid #E8E8E8;
-	height:50px;
-	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
+header {
+	position:absolute;
+	width:100%;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-nav .logo {
+header:hover .logo {
+	transform:translateY(15px);
+}
+
+header:hover .logo p {
+	top:75px;
+	color:white;
+}
+
+header:hover nav {
+	background-color: #2D2D2D;
+	height:170px;
+}
+
+header:hover nav .mainNav {
+	color:white;
+	border-bottom:1px solid rgba(0,0,0,0.5);
+}
+
+/* LOGO */
+
+header .logo {
 	position:absolute;
 	left:0;top:0;
 	width:100px;
 	height:100px;
 	background-color: #2D2D2D;
 	text-align:center;
+	transition: transform 0.4s;
 }
 
-nav .logo p {
+header .logo p {
 	position:absolute;
 	font-size:0.8em;
 	width:120%;
@@ -29,28 +57,86 @@ nav .logo p {
 	left:-8px;
 	color:black;
 	letter-spacing:0.1em;
+	transition:all 0.4s;
 }
 
-nav .logo img {
+header .logo img {
 	width:90%;
 	margin-top:8px;
 }
 
-nav ul {
-	width:100%;
-	max-width:650px;
-	margin:0 auto;	
+/* NAVIGATION */
+
+nav {
+	background-color: #E8E8E8;
+	background-color: white;
+	overflow:hidden;
+	height:47px;/*
+	border-bottom: 1px solid #E8E8E8;*/
+	/*height:50px;*/
+	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
+	transition: all 0.3s;
 }
 
-nav li {
+nav ul, nav .subNav .subNavContainer {
+	width:100%;
+	max-width:580px;
+	margin:0 auto;	
+/*	border:1px solid red;*/
+}
+
+
+nav .mainNav li, nav .subNav .subNavContainer ul {
 	display: inline-block;
 	width:20%;
 	margin:0;
 	padding:0;
 	text-align:center;
-	
-	margin-top:0.8em;
+	margin-top:1em;margin-bottom:1em;
 }
+
+nav .mainNav, nav .subNav {
+	font-size:0.8em;
+	margin-top:4px;
+	letter-spacing: 0.1em;
+}
+
+nav .subNav {
+	margin-top:0;
+	font-size: 0.7em;
+	max-width:100%;
+	background-color: #2D2D2D;
+	color:white;
+}
+
+nav .subNav .subNavContainer{
+	border-top:1px solid rgba(255,255,255,0.1);
+}
+
+nav .subNav .subNavContainer ul {
+	vertical-align: top;
+	margin-top:0;
+	padding-top:1em;
+	color:#898989;
+}
+
+nav .subNav .subNavContainer ul:hover {
+
+	border-top:1px solid white;
+	color:#E8E8E8;
+}
+
+nav .subNav .subNavContainer ul li {
+	list-style:none;
+	margin-bottom:7px;
+	cursor:pointer;
+}
+
+nav .subNav .subNavContainer ul li:hover {
+
+}
+
+
 
 /* MAIN */
 
@@ -89,10 +175,17 @@ main .pwd .arrow{
 }
 
 .jumbo .container {
-	margin-top:100px;
+/*	margin-top:100px;
 	border:4px solid white;
-	height:400px;
+	height:400px;*/
 
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #C1AC99;
+	height:200px;
 }
 
 /* MISC */
@@ -134,7 +227,7 @@ article img {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-	nav ul {
+	nav ul, nav .subNav .subNavContainer {
 		max-width:800px;
 	}	
 }
