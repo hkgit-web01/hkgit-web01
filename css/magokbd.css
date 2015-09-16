@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+/* HTML */
+html {
+	font-size:10px;
+}
+
 /* LANGUAGE */
 
 .kr {
@@ -24,7 +29,7 @@ header:hover .logo img {
 }
 
 header:hover .logo p {
-	top:90px;
+	top:85px;
 	color:white;
 }
 
@@ -43,17 +48,18 @@ header:hover nav .mainNav {
 header .logo {
 	position:absolute;
 	left:0;top:0;
-	width:100px;
-	height:100px;
+	width:85px;
+	height:85px;
 	background-color: #2D2D2D;
 	text-align:center;
+	z-index:999;
 }
 
 header .logo p {
 	position:absolute;
 	font-size:0.8em;
 	width:120%;
-	top:105px;
+	top:95px;
 	left:-8px;
 	color:black;
 	letter-spacing:0.1em;
@@ -76,7 +82,7 @@ nav {
 	border-bottom: 1px solid #E8E8E8;*/
 	/*height:50px;*/
 	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
-	transition: all 0.3s;
+	transition: all 0.4s;
 }
 
 nav ul, nav .subNav .subNavContainer {
@@ -84,6 +90,9 @@ nav ul, nav .subNav .subNavContainer {
 	max-width:580px;
 	margin:0 auto;	
 /*	border:1px solid red;*/
+}
+
+nav .mainNav {
 }
 
 
@@ -146,33 +155,53 @@ main {
   width: 95%;
   margin:0 auto;
   margin-top:-80px;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom:10px;
   box-sizing: border-box; 
   background-color:white;
-  z-index:-10;
+}
+
+main .pwd {
+	margin-left:1.5em;
+	font-size:0.8em;
+	letter-spacing: 0.09em;
+	margin-top:2px;
+	margin-bottom:0;
 }
 
 main .pwd .arrow{
 	display:inline-block;
 	width:12px;
 	margin:0 10px;
-	vertical-align: 0;
+	vertical-align: -1px;
 	height:12px;
 	background: url("../imgs/arrow.svg") no-repeat;
+}
+
+main hr {
+	margin-top:13px;
 }
 
 
 /* JUMBOTRON */
 
 .jumbo {
-	height:500px;
+	position:relative;
+	width:100%;
+	height:600px;
+	overflow:hidden;
+	margin-bottom:-30px;
 }
 
 .jumbo img {
-	position:absolute;
-	width:100%;
+	position:relative;
+	min-height:100%;
 	z-index:-99;
-	top:0;left:0;
+
+	left:50%;
+	margin-left:-750px;	
+	transform: translateY(-50px);
+	transition:transform 0.5s;
 }
 
 .jumbo .container {
@@ -182,9 +211,52 @@ main .pwd .arrow{
 
 }
 
+
+/* MAIN */
+
+main {
+
+}
+
+main nav#subNav {
+	width:100%;
+	word-wrap: break-word;
+	height:auto;
+}
+
+main article {
+}
+
+nav .info {
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: #E8E8E8;
+}
+
+nav .info .topMenu, nav .info .midMenu {
+	padding-right:10px;
+	text-align:right;
+	background-color: #C1AC99;
+}
+
+nav .info .topMenu {
+	padding-top:10px;
+	margin-bottom: 0;
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+}
+
+nav .info .midMenu {
+	color:white;
+	font-size: 1.3em;
+	padding-bottom: 20px;
+}
+
 /* FOOTER */
 
 footer {
+	margin-top:50px;
 	background-color: #C1AC99;
 	height:200px;
 }
@@ -205,24 +277,34 @@ article img {
 /* Larger than mobile */
 @media (min-width: 400px) {
 
+
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-	.jumbo img {
-		margin-top:-5%;
-	}
+
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.jumbo img {
-		margin-top:-15%;
+
+
+}
+
+/* Larger than tablet */
+@media (min-width: 900px) {
+
+	main nav#subNav {
+		width:22%;
 	}
+
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+
 
 }
 
@@ -231,4 +313,21 @@ article img {
 	nav ul, nav .subNav .subNavContainer {
 		max-width:800px;
 	}	
+}
+
+/* Larger than JUMBOTRON */
+@media (min-width: 1500px) {
+	.jumbo img{
+		width:100%;
+		left:0;
+		margin-left:0;
+		transform: translateY(-100px);
+	}
+}
+
+/* Larger than FHD */
+@media (min-width: 1920px) {
+	.jumbo img{
+		transform: translateY(-180px);
+	}
 }
