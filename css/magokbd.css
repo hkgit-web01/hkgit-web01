@@ -172,7 +172,7 @@ main .pwd {
 main .pwd .arrow{
 	display:inline-block;
 	width:12px;
-	margin:0 10px;
+	margin:0 7px;
 	vertical-align: -1px;
 	height:12px;
 	background: url("../imgs/arrow.svg") no-repeat;
@@ -225,33 +225,30 @@ main nav#subNav {
 }
 
 main article {
+	margin-top:5px;
 }
 
 nav .info {
-	width:80%;
+	width:100%;
 	margin-right:auto;
 	margin-left:auto;
 	background-color: #E8E8E8;
 }
 
-nav .info .topMenu, nav .info .midMenu {
-	padding-right:10px;
-	text-align:right;
-	background-color: #C1AC99;
-}
-
-nav .info .topMenu {
-	padding-top:10px;
-	margin-bottom: 0;
-	font-size: 0.7em;
-	letter-spacing: 0.1em;
-}
-
 nav .info .midMenu {
+	font-weight: bold;
+	padding-right:15px;
+	text-align:right;
+	letter-spacing: 0.07em;
+	background-color: #87786B;
+	padding-top: 12px;
 	color:white;
-	font-size: 1.3em;
-	padding-bottom: 20px;
+	font-size: 1.2em;
+	padding-bottom: 20px;	
 }
+
+
+
 
 /* FOOTER */
 
@@ -270,6 +267,10 @@ hr {
 
 article img {
 	width:100%;
+}
+
+p.description {
+	color: #87786B;
 }
 
 
@@ -295,6 +296,9 @@ article img {
 /* Larger than tablet */
 @media (min-width: 900px) {
 
+	main nav .info {
+		width:80%;
+	}
 	main nav#subNav {
 		width:22%;
 	}
