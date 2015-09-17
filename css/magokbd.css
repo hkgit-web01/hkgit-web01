@@ -24,24 +24,7 @@ header {
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-header:hover .logo img {
-	transform:translateY(15px);
-}
 
-header:hover .logo p {
-	top:85px;
-	color:white;
-}
-
-header:hover nav {
-	background-color: #2D2D2D;
-	height:170px;
-}
-
-header:hover nav .mainNav {
-	color:white;
-	border-bottom:1px solid rgba(0,0,0,0.5);
-}
 
 /* LOGO */
 
@@ -60,7 +43,7 @@ header .logo p {
 	position:absolute;
 	font-size:0.8em;
 	width:120%;
-	top:95px;
+	top:90px;
 	left:-8px;
 	color:black;
 	letter-spacing:0.1em;
@@ -77,6 +60,33 @@ header .logo p {
 		display:block;
 	}
 }
+
+@media (min-width: 1000px) {
+	
+	header:hover .logo img {
+		transform:translateY(15px);
+	}
+
+	header:hover .logo p {
+		top:85px;
+		color:white;
+	}
+
+	header:hover nav {
+		background-color: #2D2D2D;
+		height:170px;
+	}
+
+	header:hover nav .mainNav {
+		color:white;
+		border-bottom:1px solid rgba(0,0,0,0.5);
+	}
+
+}
+
+
+
+
 
 header .logo img {
 	width:90%;
@@ -202,10 +212,19 @@ main .pwd {
 main .pwd .arrow{
 	display:inline-block;
 	width:12px;
-	margin:0 7px;
+	margin:0 2px;
 	vertical-align: -1px;
 	height:12px;
 	background: url("../imgs/arrow.svg") no-repeat;
+}
+
+@media (min-width: 400px) {
+
+	main .pwd .arrow{
+
+		margin:0 7px;
+	}
+
 }
 
 main hr {
