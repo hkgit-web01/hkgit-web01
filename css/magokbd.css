@@ -244,20 +244,38 @@ main hr {
 .jumbo {
 	position:relative;
 	width:100%;
-	height:600px;
+	height:300px;
 	overflow:hidden;
 	margin-bottom:-30px;
 }
 
 .jumbo img {
 	position:relative;
-	min-height:100%;
+	min-height:25%;
 	z-index:-99;
-
-	left:50%;
-	margin-left:-750px;	
-	transform: translateY(-50px);
+	height:300px;
 	transition:transform 0.5s;
+	left:0;
+	margin-left:0
+	transform: translateY(0);
+	transform:  translateX(-100px);;
+}
+
+@media (min-width: 400px) {
+
+	.jumbo {
+		height:600px;
+	}
+
+	.jumbo img {
+		min-height:100%;
+		height:auto;
+		left:50%;
+		margin-left:-750px;	
+		transform: translateY(-50px);		
+	}
+
+
 }
 
 .jumbo .container {
