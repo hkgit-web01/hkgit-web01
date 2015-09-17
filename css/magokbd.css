@@ -13,6 +13,7 @@ html {
 
 .container {
 	max-width: 1280px;
+	padding:0;
 }
 
 /* HEADER */
@@ -205,8 +206,8 @@ main .pwd {
 	margin-left:1.5em;
 	font-size:0.6em;
 	letter-spacing: 0.09em;
-	margin-top:5px;
-	margin-bottom:9px;
+	margin-top:6px;
+	margin-bottom:11px;
 }
 
 main .pwd .arrow{
