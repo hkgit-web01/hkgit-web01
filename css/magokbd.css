@@ -192,7 +192,7 @@ nav .subNav .subNavContainer ul li:hover {
 
 main {
   position: relative;
-  width: 95%;
+  width: 100%;
   margin:0 auto;
   margin-top:-80px;
   padding-top: 10px;
@@ -220,6 +220,10 @@ main .pwd .arrow{
 }
 
 @media (min-width: 400px) {
+
+	main {
+		width:95%;
+	}
 
 	main .pwd {
 		font-size:0.8em;
