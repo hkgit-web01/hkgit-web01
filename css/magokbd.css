@@ -207,7 +207,7 @@ main {
 main .pwd {
 	margin-left:1.5em;
 	font-size:0.6em;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.05em;
 	margin-top:6px;
 	margin-bottom:11px;
 }
@@ -345,6 +345,11 @@ main article .icons > div > div{
 	text-align:center;
 	color:#2D2D2D;
 
+}
+
+main article .content {
+	font-size:0.9em;
+	line-height: 2em
 }
 
 main article .gallery {
@@ -515,6 +520,7 @@ hr {
 
 p.description {
 	color: #87786B;
+	font-size:1.2em;
 }
 
 nav ul li.selected {
