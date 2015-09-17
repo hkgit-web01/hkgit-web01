@@ -78,7 +78,7 @@ nav {
 	background-color: #E8E8E8;
 	background-color: white;
 	overflow:hidden;
-	height:47px;/*
+	height:45px;/*
 	border-bottom: 1px solid #E8E8E8;*/
 	/*height:50px;*/
 	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
@@ -106,8 +106,9 @@ nav .mainNav li, nav .subNav .subNavContainer ul {
 }
 
 nav .mainNav, nav .subNav {
-	font-size:0.8em;
+	font-size:0.7em;
 	margin-top:4px;
+	padding-bottom:4px;
 	letter-spacing: 0.1em;
 }
 
@@ -159,6 +160,7 @@ main {
   padding-bottom:10px;
   box-sizing: border-box; 
   background-color:white;
+
 }
 
 main .pwd {
@@ -212,7 +214,7 @@ main hr {
 }
 
 
-/* MAIN */
+
 
 main {
 
@@ -224,16 +226,74 @@ main nav#subNav {
 	height:auto;
 }
 
+/* ARTICLE */
+
 main article {
 	margin-top:5px;
 }
 
+main article img {
+	width:100%;
+}
+
+main article .icons {
+	margin:50px 0;
+	font-size:0.8em;
+
+}
+
+main article .icons > div {
+	background-color: #E8E8E8;
+	height:25px;/*
+	max-width:150px;*/
+	padding:3px;
+	text-align:center;
+	color:#87786B;
+	margin-top:2px;
+	margin-bottom: 2px;
+
+}
+
+main article .icons > div > div{
+	background-color: white;
+	width:70%;
+	float:right;
+	text-align:center;
+	color:#2D2D2D;
+
+}
+
+main article .gallery {
+	margin-bottom:40px;
+}
+
+main article .detail {
+}
+
+main article .column p {
+	text-align:center;
+	border-bottom:1px solid #C1AC99;
+	padding:10px 0;
+	color:#87786B;
+}
+
+main article .column li {
+	border:1px solid #E8E8E8;
+	text-align:center;
+	list-style:none;
+	padding:10px 0;
+	font-size: 0.8em;
+}
+
 nav .info {
 	width:100%;
+	font-size:0.9em;
 	margin-right:auto;
 	margin-left:auto;/*
 	background-color: #E8E8E8;*/
 	border-right:1px solid #E1E1E1;
+	border-bottom:1px solid #E1E1E1;
+	margin-bottom:20px;
 }
 
 nav .info .midMenu {
@@ -265,6 +325,8 @@ nav .info ul li {
 }
 
 
+
+
 /* FOOTER */
 
 footer {
@@ -280,9 +342,6 @@ hr {
 }
 
 
-article img {
-	width:100%;
-}
 
 p.description {
 	color: #87786B;
@@ -301,13 +360,16 @@ br {
 /* Larger than mobile */
 @media (min-width: 400px) {
 
+	
 
 
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-
+	nav .info {
+		border-bottom:none;
+	}
 }
 
 /* Larger than tablet */
