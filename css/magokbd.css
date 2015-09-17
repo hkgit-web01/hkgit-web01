@@ -231,23 +231,38 @@ main article {
 nav .info {
 	width:100%;
 	margin-right:auto;
-	margin-left:auto;
-	background-color: #E8E8E8;
+	margin-left:auto;/*
+	background-color: #E8E8E8;*/
+	border-right:1px solid #E1E1E1;
 }
 
 nav .info .midMenu {
 	font-weight: bold;
-	padding-right:15px;
-	text-align:right;
+	text-align:left;
 	letter-spacing: 0.07em;
-	background-color: #87786B;
+	/*background-color: #87786B;
+	background-color: #2D2D2D;*/
 	padding-top: 12px;
 	color:white;
+	color:#2D2D2D;
+	border-bottom:1px solid #E1E1E1;
 	font-size: 1.2em;
 	padding-bottom: 20px;	
 }
 
+nav .info ul {
+	color:#87786B;
+	font-size:0.8em;
+	margin:25px 0;
+}
 
+nav .info ul li {
+	color:#2D2D2D;
+	font-size:1.2em;
+	list-style:none;
+	margin:3px 0;
+	margin-left:15px;
+}
 
 
 /* FOOTER */
@@ -273,6 +288,14 @@ p.description {
 	color: #87786B;
 }
 
+nav ul li.selected {
+	font-weight: bold;
+	list-style-type:disc;
+}
+
+br {
+	display:none;
+}
 
 /* MEDIA QUERIES */
 /* Larger than mobile */
@@ -317,6 +340,10 @@ p.description {
 	nav ul, nav .subNav .subNavContainer {
 		max-width:800px;
 	}	
+
+	br.w1200 {
+		display: block;
+	}
 }
 
 /* Larger than JUMBOTRON */
