@@ -415,6 +415,20 @@ footer {
 	margin-top:50px;
 	background-color: #C1AC99;
 	height:200px;
+	padding-top:25px;
+}
+
+footer .logo {
+	margin-top:60px;
+	overflow:hidden;
+	height:100px;
+	text-align: center;
+}
+
+footer .logo img {
+	max-width:150px;
+	position:relative;
+
 }
 
 /* MISC */
@@ -442,7 +456,9 @@ br {
 /* Larger than mobile */
 @media (min-width: 400px) {
 
-
+	main {
+		border-radius:10px;	
+	}
 
 
 }
@@ -457,6 +473,10 @@ br {
 		border-bottom:1px solid #E1E1E1;
 		padding-bottom: 20px;
 	}
+
+	
+
+	
 
 	main hr {
 		margin-bottom:30px;
