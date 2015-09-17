@@ -240,6 +240,7 @@ main .pwd .arrow{
 
 main hr {
 	margin-top:13px;
+	margin-bottom:13px;
 }
 
 
@@ -260,7 +261,7 @@ main hr {
 	height:300px;
 	transition:transform 0.5s;
 	left:0;
-	margin-left:0
+	margin-left:0;
 	-webkit-transform:-webkit-translateY(0);
 	   -moz-transform:-moz-translateY(0);
 	        transform:translateY(0);
@@ -387,9 +388,8 @@ nav .info .midMenu {
 	padding-top: 12px;
 	color:white;
 	color:#2D2D2D;
-	border-bottom:1px solid #E1E1E1;
 	font-size: 1.2em;
-	padding-bottom: 20px;	
+	padding-bottom: 0;	
 }
 
 nav .info ul {
@@ -442,15 +442,24 @@ br {
 /* Larger than mobile */
 @media (min-width: 400px) {
 
-	
+
 
 
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+
 	nav .info {
 		border-bottom:none;
+	}
+	nav .info .midMenu {
+		border-bottom:1px solid #E1E1E1;
+		padding-bottom: 20px;
+	}
+
+	main hr {
+		margin-bottom:30px;
 	}
 }
 
