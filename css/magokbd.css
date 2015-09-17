@@ -48,21 +48,15 @@ header:hover nav .mainNav {
 header .logo {
 	position:absolute;
 	left:0;top:0;
-	width:45px;
-	height:45px;
+	width:65px;
+	height:65px;
 	background-color: #2D2D2D;
 	text-align:center;
 	z-index:999;
 }
 
-@media (min-width: 400px) {
-	header .logo {
-		width:85px;
-		height:85px;
-	}
-}
-
 header .logo p {
+	display:none;
 	position:absolute;
 	font-size:0.8em;
 	width:120%;
@@ -71,6 +65,17 @@ header .logo p {
 	color:black;
 	letter-spacing:0.1em;
 	transition:all 0.4s;
+}
+
+@media (min-width: 400px) {
+	header .logo {
+		width:85px;
+		height:85px;
+	}
+
+	header .logo p {
+		display:block;
+	}
 }
 
 header .logo img {
@@ -85,7 +90,7 @@ nav {
 	background-color: #E8E8E8;
 	background-color: white;
 	overflow:hidden;
-	height:45px;/*
+	height:65px;/*
 	border-bottom: 1px solid #E8E8E8;*/
 	/*height:50px;*/
 	/*box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);*/
@@ -100,8 +105,24 @@ nav ul, nav .subNav .subNavContainer {
 }
 
 nav .mainNav {
+
+	visibility:hidden;
 }
 
+@media (min-width: 400px) {
+	nav {
+		height:45px;
+	}
+
+
+}
+
+@media (min-width: 1000px) {
+	nav .mainNav {
+		visibility:visible;
+	}
+
+}
 
 nav .mainNav li, nav .subNav .subNavContainer ul {
 	display: inline-block;
@@ -228,7 +249,6 @@ main {
 }
 
 main nav#subNav {
-	width:100%;
 	word-wrap: break-word;
 	height:auto;
 }
@@ -236,6 +256,7 @@ main nav#subNav {
 /* ARTICLE */
 
 main article {
+	padding:0 20px;
 	margin-top:5px;
 }
 
