@@ -203,12 +203,17 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	<script>
 
 	// declare var to use as map width
-	var mapWidth;
+	var mapWidth, mapHeight;
 
 	// decide according to client width
 	mapWidth = window.innerWidth > 550 ? 600 : 500 ;
-	if(window.innerWidth < 400) mapWidth = 350;
-	
+	mapHeight = 400;
+	if(window.innerWidth < 400) {
+		mapWidth = 350;
+		mapHeight = 250;
+	}
+
+
 	// set center
 	var oPoint = new nhn.api.map.LatLng(37.5671300, 126.8185600);
     nhn.api.map.setDefaultPoint('LatLng');
