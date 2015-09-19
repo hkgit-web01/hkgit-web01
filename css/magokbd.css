@@ -551,6 +551,9 @@ br {
 	display:none;
 }
 
+br.all{
+	display:block;
+}
 .alignRight {
 	position:relative;
 	margin:0 auto;
@@ -564,14 +567,14 @@ a {
 	color:inherit;
 }
 
-.subway img {
+.subway img, .bus img {
 	display:inline-block;
 	width:20px;
 	vertical-align:-6px;
 	margin-right:3px;
 }
 
-main article .address, main article .subway {
+main article .address, main article .subway, main article .bus {
 	font-size:1.1em;
 	letter-spacing:0.05em;
 }
