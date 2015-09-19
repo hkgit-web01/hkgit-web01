@@ -209,7 +209,7 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	mapWidth = window.innerWidth > 550 ? 600 : 500 ;
 
 	// set center
-	var oPoint = new nhn.api.map.LatLng(37.567429, 126.818471);
+	var oPoint = new nhn.api.map.LatLng(37.5671300, 126.8185600);
     nhn.api.map.setDefaultPoint('LatLng');
 
     // make the map
@@ -236,6 +236,12 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 
     var oMarker = new nhn.api.map.Marker(oIcon, { title : '마곡 Birthday 산후조리원', point : oPoint });
     oMap.addOverlay(oMarker);
+
+    // market label
+
+    var oMarkerLabel = nhn.api.map.MarkerLabel();
+    oMarkerLabel.setVisible(true, oMarker);
+
 
 
 	</script>
