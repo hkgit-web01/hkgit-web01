@@ -532,8 +532,7 @@ footer .info p {
 @media (min-width: 550px) {
 
 	
-	main article h5 {
-		font-weight: normal;	
+	main article h5 {	
 	}
 	
 	footer {
@@ -571,6 +570,9 @@ hr {
 }
 
 p.description {
+	border-radius:5px;
+/*	font-family: '바탕', serif;
+	font-weight:bold;*/
 	background-color: #87786B;
 	font-size:1em;
 	padding:20px;
