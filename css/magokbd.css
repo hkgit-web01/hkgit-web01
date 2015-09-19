@@ -341,6 +341,10 @@ main article img {
 	width:60%;
 }
 
+main article img.full {
+	width:100%;
+}
+
 main article .icons {
 	margin:50px 0;
 	font-size:0.8em;
@@ -602,13 +606,17 @@ a {
 	margin-right:3px;
 }
 
+.clearboth {
+	clear:both;
+}
+
 /* IMAGES */
 
 main article .about1, main article .about3 {
 	float:right;
 	margin-top:10px;
 	margin-left:30px;
-	margin-bottom:10px;
+	margin-bottom:30px;
 }
 
 main article .about2 {
