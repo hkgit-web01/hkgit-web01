@@ -469,6 +469,9 @@ nav .info ul li.selected {
 /* FOOTER */
 
 footer {
+	-webkit-box-shadow: inset 0px 6px 17px -10px rgba(45,45,45,1);
+-moz-box-shadow: inset 0px 6px 17px -10px rgba(45,45,45,1);
+box-shadow: inset 0px 6px 17px -10px rgba(45,45,45,1);
 	margin-top:50px;
 	background-color: #87786B;
 	height:auto;
