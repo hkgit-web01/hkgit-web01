@@ -316,6 +316,7 @@ main article {
 	padding:0 20px;
 	margin-top:5px;
 	max-width:620px;
+	overflow:hidden;
 }
 
 main article h5 {
