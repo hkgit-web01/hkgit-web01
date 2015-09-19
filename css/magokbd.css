@@ -338,7 +338,7 @@ main article h5.kr {
 }
 
 main article img {
-	width:50%;
+	width:60%;
 }
 
 main article .icons {
@@ -602,6 +602,22 @@ a {
 	margin-right:3px;
 }
 
+/* IMAGES */
+
+main article .about1, main article .about3 {
+	float:right;
+	margin-top:10px;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+
+main article .about2 {
+	float:left;
+	margin-top:10px;
+	margin-right:30px;
+	margin-bottom:10px;
+}
+
 /*main article .address, main article .subway, main article .bus {
 	font-size:1.1em;
 	letter-spacing:0.05em;
@@ -635,6 +651,10 @@ a {
 
 	main hr {
 		margin-bottom:30px;
+	}
+
+	main article img {
+		width:50%;
 	}
 
 	br.w550 {
