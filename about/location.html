@@ -91,6 +91,9 @@
 					<!-- <img src="imgs/banner/sample.jpg" alt="">	 -->
 					<h4>오시는 길</h4>
 					<p class="description kr">Birthday 산후조리원은 서울시 마곡동에 위치하고 있습니다 </p>
+
+					<div id="testMap"></div>
+
 					<p class="content">
 						세상에서 가장 소중한 우리 아기의 탄생을 모든 직원이 진심으로 축하드리며,<br class="w750">
 아기의 건강과 행복이 시작되는 시간<br class="w750">
@@ -196,5 +199,23 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	
 
 	<script src="../js/script.js"></script>
+	<script src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=6de000aef38f0e9db28bc063d8fc59d7"></script>
+	<script>
+		 var oPoint = new nhn.api.map.LatLng(37.5010226, 127.0396037);
+                        nhn.api.map.setDefaultPoint('LatLng');
+                        oMap = new nhn.api.map.Map('testMap' ,{
+                                                point : oPoint,
+                                                zoom : 10,
+                                                enableWheelZoom : true,
+                                                enableDragPan : true,
+                                                enableDblClickZoom : false,
+                                                mapMode : 0,
+                                                activateTrafficMap : false,
+                                                activateBicycleMap : false,
+                                                minMaxLevel : [ 1, 14 ],
+                                                size : new nhn.api.map.Size(500, 400)
+                                        });
+
+	</script>
 </body>
 </html>
