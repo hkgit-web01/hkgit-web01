@@ -606,9 +606,9 @@ main article .address, main article .subway, main article .bus {
 	letter-spacing:0.05em;
 }
 
-main article.intro p.content {
+/*main article.intro p.content {
 	font-size:1.1em;
-}
+}*/
 
 /* MEDIA QUERIES */
 /* Larger than mobile */
