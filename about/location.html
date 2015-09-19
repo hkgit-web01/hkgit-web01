@@ -202,23 +202,38 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	<script src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=6de000aef38f0e9db28bc063d8fc59d7"></script>
 	<script>
 
+	// declare var to use as map width
 	var mapWidth;
+
+	// decide according to client width
 	mapWidth = window.innerWidth > 550 ? 600 : 500 ;
 
-		 var oPoint = new nhn.api.map.LatLng(37.567429, 126.818471);
-                        nhn.api.map.setDefaultPoint('LatLng');
-                        oMap = new nhn.api.map.Map('testMap' ,{
-                                                point : oPoint,
-                                                zoom : 12,
-                                                enableWheelZoom : true,
-                                                enableDragPan : true,
-                                                enableDblClickZoom : false,
-                                                mapMode : 0,
-                                                activateTrafficMap : false,
-                                                activateBicycleMap : false,
-                                                minMaxLevel : [ 1, 14 ],
-                                                size : new nhn.api.map.Size(mapWidth, 400)
-                                        });
+	// set center
+	var oPoint = new nhn.api.map.LatLng(37.567429, 126.818471);
+    nhn.api.map.setDefaultPoint('LatLng');
+
+    // make the map
+    oMap = new nhn.api.map.Map('testMap' ,{
+        point : oPoint,
+        zoom : 12,
+        enableWheelZoom : true,
+        enableDragPan : true,
+        enableDblClickZoom : false,
+        mapMode : 0,
+        activateTrafficMap : false,
+        activateBicycleMap : false,
+        minMaxLevel : [ 1, 14 ],
+        size : new nhn.api.map.Size(mapWidth, 400)
+    });
+
+    var oSize = new nhn.api.map.Size(28, 37);
+    var oOffset = new nhn.api.map.Size(14, 37);
+    var oIcon = new nhn.api.map.Icon('http://static.naver.com/maps2/icons/pin_spot2.png', oSize, oOffset);
+    
+    var mapInfoTestWindow = new nhn.api.map.InfoWindow(); // - info window 생성
+    mapInfoTestWindow.setVisible(false); // - infowindow 표시 여부 지정.
+    oMap.addOverlay(mapInfoTestWindow);     // - 지도에 추가.  
+
 
 	</script>
 </body>
