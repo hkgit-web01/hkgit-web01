@@ -11,6 +11,10 @@ html {
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
+.kr.goong {
+	font-family: '궁서', serif;
+}
+
 .container {
 	max-width: 1280px;
 	padding:0;
@@ -19,7 +23,7 @@ html {
 /* HEADER */
 
 header {
-	position:fixed;
+	position:absolute;
 	width:100%;
 	z-index:9999;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.15), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -320,10 +324,15 @@ main article {
 	overflow:hidden;
 }
 
+
 main article h5 {
+	border-bottom:1px solid #87786B;
 	margin-top:60px;
 	margin-bottom:30px;
-	letter-spacing:0.025em;
+}
+
+main article h5.kr {
+	font-family: '바탕', serif;
 }
 
 main article img {
@@ -358,6 +367,7 @@ main article .icons > div > div{
 main article .content {
 	font-size:0.9em;
 	line-height: 2em;
+	letter-spacing: -0.01em;
 }
 
 main article .gallery {
@@ -380,6 +390,10 @@ main article .column li {
 	list-style:none;
 	padding:10px 0;
 	font-size: 0.8em;
+}
+
+main article .column li.special {
+	background-color: #E8E8E8;
 }
 
 main article .image {
@@ -546,8 +560,10 @@ hr {
 }
 
 p.description {
-	color: #87786B;
+	color: #C2702A;
 	font-size:1.2em;
+	padding:10px;
+	border: 1px dotted #C2702A;
 }
 
 
