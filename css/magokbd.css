@@ -563,6 +563,17 @@ a {
 	text-decoration: none;
 }
 
+.subway img {
+	display:inline-block;
+	width:20px;
+	vertical-align:-6px;
+	margin-right:3px;
+}
+
+main article .address, main article .subway {
+	font-size:1.2em;
+}
+
 
 /* MEDIA QUERIES */
 /* Larger than mobile */
