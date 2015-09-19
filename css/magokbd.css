@@ -561,6 +561,7 @@ br {
 
 a {
 	text-decoration: none;
+	color:inherit;
 }
 
 .subway img {
@@ -572,8 +573,12 @@ a {
 
 main article .address, main article .subway {
 	font-size:1.2em;
+	letter-spacing:0.05em;
 }
 
+#testMap {
+	border:2px solid #87786B;
+}
 
 /* MEDIA QUERIES */
 /* Larger than mobile */
