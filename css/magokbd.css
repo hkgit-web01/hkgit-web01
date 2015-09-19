@@ -526,6 +526,11 @@ footer .info p {
 
 @media (min-width: 550px) {
 
+	
+	main article h5 {
+		font-weight: bold;	
+	}
+	
 	footer {
 		padding-top:25px;
 		height:220px;
