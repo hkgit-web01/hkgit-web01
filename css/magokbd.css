@@ -360,6 +360,8 @@ main article .icons > div {
 	color:#87786B;
 	margin-top:2px;
 	margin-bottom: 2px;
+	border:1px solid #87786B;
+	border-radius:5px;
 
 }
 
@@ -380,6 +382,11 @@ main article .content {
 
 main article .gallery {
 	margin-bottom:40px;
+	width:100%;
+}
+
+main article .gallery img {
+	width:100%;
 }
 
 main article .detail {
@@ -398,6 +405,7 @@ main article .column li {
 	list-style:none;
 	padding:10px 0;
 	font-size: 0.8em;
+	border-radius:5px;
 }
 
 main article .column li.special {
