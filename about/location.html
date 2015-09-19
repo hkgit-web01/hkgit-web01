@@ -201,6 +201,10 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	<script src="../js/script.js"></script>
 	<script src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=6de000aef38f0e9db28bc063d8fc59d7"></script>
 	<script>
+
+	var mapWidth;
+	mapWidth = window.innerWidth > 550 ? 600 : 500 ;
+
 		 var oPoint = new nhn.api.map.LatLng(37.567429, 126.818471);
                         nhn.api.map.setDefaultPoint('LatLng');
                         oMap = new nhn.api.map.Map('testMap' ,{
@@ -213,7 +217,7 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
                                                 activateTrafficMap : false,
                                                 activateBicycleMap : false,
                                                 minMaxLevel : [ 1, 14 ],
-                                                size : new nhn.api.map.Size(600, 400)
+                                                size : new nhn.api.map.Size(mapWidth, 400)
                                         });
 
 	</script>
