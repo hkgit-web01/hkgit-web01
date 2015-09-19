@@ -571,10 +571,10 @@ hr {
 }
 
 p.description {
-	color: #C2702A;
-	font-size:1.2em;
-	padding:10px;
-	border: 1px dotted #C2702A;
+	background-color: #87786B;
+	font-size:1em;
+	padding:20px;
+	color:white;
 }
 
 
