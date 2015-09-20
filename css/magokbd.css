@@ -173,10 +173,11 @@ nav .mainNav, nav .subNav {
 
 nav .subNav {
 	margin-top:0;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	max-width:100%;
 	background-color: #2D2D2D;
 	color:white;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 nav .subNav .subNavContainer{
@@ -547,6 +548,7 @@ footer .link {
 	font-weight: bold;
 	transition: padding 0.3s ;
 	cursor: pointer;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 footer .link:hover {
