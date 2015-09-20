@@ -330,7 +330,7 @@ main nav#subNav {
 
 /* ARTICLE */
 
-main article .nine.columns {
+main article {
 	padding:0 20px;
 	margin-top:5px;
 	max-width:720px;
