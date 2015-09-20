@@ -370,8 +370,8 @@ main article img.full {
 
 main article .icons {
 	margin:50px 0;
-	font-size:0.8em;
-
+	font-size:0.85em;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 main article .icons > div {
@@ -382,6 +382,8 @@ main article .icons > div {
 	margin-top:2px;
 	margin-bottom: 2px;
 	border-radius:5px;
+	font-family:inherit;
+	font-weight:bold;
 
 }
 
@@ -391,6 +393,16 @@ main article .icons > div > div{
 	float:right;
 	text-align:center;
 	color:#2D2D2D;
+	font-family:inherit;
+	font-weight:normal;
+	border-radius:5px;
+
+}
+
+main article .icons > div.one-half > div,main article .icons > div.twelve > div{
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
 
 }
 
@@ -415,25 +427,32 @@ main article .gallery img {
 main article .detail {
 }
 
-main article .column p {
+main article .column p, main article p.liHeader{
 	text-align:center;
 	border-bottom:1px solid #C1AC99;
 	padding:10px 0;
 	color:#87786B;
 }
 
-main article .column li {
+main article .column li, main article .columns li {
 	border:1px solid #E8E8E8;
 	text-align:center;
 	list-style:none;
-	padding:10px 0;
+	padding:10px 20px;
 	font-size: 0.8em;
 	border-radius:5px;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
-main article .column li.special {
+main article .column li.special, main article .columns li.special  {
 	background-color: #E8E8E8;
+}
+
+main article .column li.price, main article .columns li.price {
+	background-color: #9E8754;
+	color:white;
+	font-size:1em;
+	font-weight: bold;
 }
 
 main article .image {
@@ -503,7 +522,7 @@ footer {
 	background-color: #87786B;
 	height:auto;
 	font-size: 0.75em;
-	color:#C1B29F;
+	color:#C1B2A9;
 	overflow:hidden;
 	padding:10px 20px;
 }
@@ -538,13 +557,13 @@ footer .info .row {
 }
 
 footer .link {
-	color: #C1B29F;
+	color: #C1B2A9;
 	margin-top:13px;
 	margin-bottom:13px;
 	font-size:1em;
 	padding:2px 0;
 	text-align: center;
-	border-bottom:1px solid #C1B29F;
+	border-bottom:1px solid #C1B2A9;
 	font-weight: bold;
 	transition: padding 0.3s ;
 	cursor: pointer;
@@ -558,7 +577,7 @@ footer .link:hover {
 }
 
 footer .info p {
-	color: #C1B29F;
+	color: #C1B2A9;
 	margin-top:20px;
 }
 
@@ -586,7 +605,7 @@ footer .info p {
 		text-align:left;
 		border-bottom:none;
 		padding-left:10px;
-		border-left:2px solid #C1B29F;
+		border-left:2px solid #C1B2A9;
 	}
 
 	footer .link:hover {
