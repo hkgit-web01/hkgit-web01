@@ -330,7 +330,7 @@ main nav#subNav {
 
 /* ARTICLE */
 
-main article {
+main article .nine.columns {
 	padding:0 20px;
 	margin-top:5px;
 	max-width:720px;
@@ -348,9 +348,8 @@ main article h5 {
 }
 
 main article h4 {
-	font-size:1.3em;
+	font-size:1.4em;
 	margin-top:10px;
-	border-bottom:1px solid #87786B;
 	padding-bottom:10px;
 	margin-bottom:0;
 }
@@ -399,7 +398,7 @@ main article .content {
 	line-height: 2em;
 	letter-spacing: -0.01em;
 	font-family: 'Nanum Gothic', sans-serif;
-	margin-top:50px;
+	margin-top:25px;
 	margin-bottom:50px;
 }
 
@@ -604,16 +603,17 @@ main article hr {
 
 p.description {
 /*	font-family: '바탕', serif;
-	font-weight:bold;*/
+	font-weight:bold;*//*
 	font-style:italic;
-	background-color: #87786B;
-	font-size:1em;
-	padding:20px;
-	color:white;
-	margin-top:5px;
+	background-color: #87786B;*/
+	line-height:1.2em;
+	font-size:1.1em;
+	padding-left:20px;
+	color:#2D2D2D;
+	margin-top:10px;
 	margin-bottom:50px;
 	width:auto;
-	border-radius: 5px;
+	border-left:3px solid #2D2D2D;
 }
 
 
@@ -650,24 +650,26 @@ a {
 	clear:both;
 }
 
+.clearright {
+	clear:right;
+}
+
 /* IMAGES */
 
 main article .about1, main article .about3 {
 	float:right;
 	margin-left:30px;
 	margin-bottom:30px;
-	margin-top:8px;
 }
 
 main article .about2, main article .about4, main article .about5 {
 	float:left;
 	margin-right:30px;
 	margin-bottom:10px;
-	margin-top:8px;
 }
 
 main article .about1, main article .about2 {
-	margin-top:40px;
+	margin-top:15px;
 }
 
 main article .about3 {
