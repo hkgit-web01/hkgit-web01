@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
 /* HTML */
@@ -9,7 +10,7 @@ html {
 /* LANGUAGE */
 
 .kr {
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Jeju Myeongjo', serif;
 }
 
 .kr.goong {
@@ -19,6 +20,10 @@ html {
 .container {
 	max-width: 1280px;
 	padding:0;
+}
+
+body {
+	font-family: "Playfair Display", "Times New Roman", serif;
 }
 
 /* HEADER */
@@ -49,7 +54,7 @@ header .logo p {
 	position:absolute;
 	font-size:0.8em;
 	width:100%;
-	top:75px;
+	top:70px;
 	color:white;
 	font-weight:normal;
 	letter-spacing: 0.05em;
@@ -64,8 +69,11 @@ header .logo p {
 	}
 
 	header .logo p {
-		border-top:1px solid white;
 		display:block;
+	}
+
+	header .logo img {
+		margin-top:4px;
 	}
 }
 
@@ -82,7 +90,7 @@ header .logo p {
 
 	header:hover nav {
 		background-color: #2D2D2D;
-		height:170px;
+		height:180px;
 	}
 
 	header:hover nav .mainNav {
@@ -96,7 +104,7 @@ header .logo p {
 
 header .logo img {
 	width:80%;
-	margin-top:4px;
+	margin-top:8px;
 	transition: transform 0.4s;
 }
 
@@ -151,19 +159,20 @@ nav .mainNav li, nav .subNav .subNavContainer ul {
 	margin:0;
 	padding:0;
 	text-align:center;
-	margin-top:1em;margin-bottom:1em;
+	margin-top:0.7em;margin-bottom:0.7em;
 }
 
 nav .mainNav, nav .subNav {
-	font-size:0.7em;
-	margin-top:2px;
-	padding-bottom:5px;
+	font-size:0.9em;
+	margin-top:0;
+	padding-top:0;
+	padding-bottom:2px;
 	letter-spacing: 0.1em;
 }
 
 nav .subNav {
 	margin-top:0;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	max-width:100%;
 	background-color: #2D2D2D;
 	color:white;
@@ -330,7 +339,6 @@ main article {
 
 main article h5 {
 	color:#87786B;
-	border-bottom:1px solid #87786B;
 	margin-top:60px;
 	margin-bottom:30px;/*
 	font-weight: bold;*/
@@ -381,6 +389,7 @@ main article .content {
 	font-size:0.85em;
 	line-height: 2em;
 	letter-spacing: -0.01em;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 main article .gallery {
@@ -407,7 +416,7 @@ main article .column li {
 	text-align:center;
 	list-style:none;
 	padding:10px 0;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border-radius:5px;
 }
 
@@ -456,8 +465,8 @@ nav .info ul li {
 	font-size:1.2em;
 	list-style:none;
 	margin:4px 0;
-	margin-left:10px;
-	padding-left:7px;
+	margin-left:12px;
+	padding-left:0;
 	cursor:pointer;
 }
 
@@ -469,8 +478,7 @@ nav .info ul li:hover {
 
 nav .info ul li.selected {
 	font-weight: bold;
-	/*list-style-type:disc;*/
-	border-left:2px solid #2D2D2D;
+	list-style-type:disc;
 	cursor:default;
 }
 
