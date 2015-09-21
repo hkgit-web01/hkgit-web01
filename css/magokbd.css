@@ -5,6 +5,9 @@
 /* HTML */
 html {
 	font-size:10.7px;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* LANGUAGE */
