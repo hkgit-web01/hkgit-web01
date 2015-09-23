@@ -433,10 +433,35 @@ main article .content {
 main article .gallery {
 	margin-bottom:40px;
 	width:100%;
+	background: url(../imgs/loading.gif) center center no-repeat;
 }
 
+
 main article .gallery img {
+	display:block;
+	float:left;
 	width:100%;
+	opacity:0;
+	transition:opacity 0.5s;
+}
+
+main article .gallery.loaded img {
+	opacity:1;
+}
+
+main article .gallery img.thumb {
+	width:25%;
+	opacity:0.5;
+	background-color: #2D2D2D;
+	cursor:pointer;
+}
+
+main article .gallery img.thumb:hover {
+	opacity:1;
+}
+
+main article .gallery img.thumb.selected {
+	opacity:1;
 }
 
 main article .detail {
