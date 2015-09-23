@@ -9,7 +9,7 @@ window.onload = function(){
 var Gallery = (function(){
 
 	var screenDom = document.getElementById("screen");
-	var galleryImages = document.querySelectorAll(".gallery img");
+	var galleryImages = document.querySelectorAll(".gallery img.thumb");
 	var i;
 
 	function refreshThumb() {
