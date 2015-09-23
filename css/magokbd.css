@@ -139,6 +139,87 @@ nav .mainNav {
 	font-weight: bold;
 }
 
+nav .mobileNav {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #2D2D2D;	
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;	
+}
+
+nav .mobileNav.open {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+
+
+
+header nav .menuOpen, nav .mobileNav .menuClose{
+	position:absolute;
+	border:none;
+	width:30px;
+	height:30px;
+	right:10%;
+	top:15px;
+	background: url(../imgs/menu_icon.png) no-repeat center center;
+	background-size: contain;
+	padding:5px;
+}
+
+nav .mobileNav .menuClose {
+	position: relative;
+	float:right;
+	left:auto;
+	top:20px;
+	background: url(../imgs/menu_close.png) no-repeat center center;
+	background-size: contain;
+}
+
+nav .mobileNav ul {
+	clear:both;
+	position: relative;
+	top:50%;
+	height:60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);	
+}
+
+nav .mobileNav ul li {
+	display: block;
+	height: 20%;/*
+	height: calc(100% / 5);*/
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+nav .mobileNav ul li a {
+	font-size: 2.5em;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+nav .mobileNav ul li a:hover,
+nav .mobileNav ul li a:focus {
+	color: #f0f0f0;
+}
+
 @media (min-width: 400px) {
 	nav {
 		height:45px;
@@ -147,11 +228,22 @@ nav .mainNav {
 		height:auto;
 	}
 
+	header nav .menuOpen{
+		width:20px;
+		height:20px;
+		top:10px;
+
+	}	
+
 }
 
 @media (min-width: 1000px) {
 	nav .mainNav {
 		visibility:visible;
+	}
+
+	header nav .menuOpen {
+		display: none;
 	}
 
 }

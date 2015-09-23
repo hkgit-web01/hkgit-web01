@@ -3,6 +3,15 @@ window.onload = function(){
 	var gallery = document.querySelectorAll(".gallery");
 	gallery[0].classList.add("loaded");
 
+	var menuOpenDom = document.querySelectorAll(".menuOpen");
+	menuOpenDom[0].onclick = function(){
+		document.querySelector(".mobileNav").classList.add("open");
+	};
+
+	var menuCloseDom = document.querySelectorAll(".menuClose");
+	menuCloseDom[0].onclick = function(){
+		document.querySelector(".mobileNav").classList.remove("open");
+	};
 
 };
 
