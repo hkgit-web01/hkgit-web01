@@ -609,7 +609,7 @@ footer .info p {
 	margin-top:20px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 950px) {
 
 	
 	main article h5 {	
@@ -732,13 +732,13 @@ li.button:hover {
 
 main article .about1, main article .about3 {
 	float:right;
-	margin-left:30px;
-	margin-bottom:30px;
+	margin-left:10px;
+	margin-bottom:10px;
 }
 
 main article .about2, main article .about4, main article .about5 {
 	float:left;
-	margin-right:30px;
+	margin-right:10px;
 	margin-bottom:10px;
 }
 
@@ -748,6 +748,7 @@ main article .about1, main article .about2 {
 
 main article .about3 {
 	width:40%;
+	margin-top:5px;
 }
 
 main article .about4 {
@@ -756,6 +757,22 @@ main article .about4 {
 
 main article .about5 {
 	width:60%;
+	margin-top:5px;
+}
+
+/* Larger than tablet */
+@media (min-width: 950px) {
+
+	main article .about1, main article .about3 {
+		margin-left:30px;
+		margin-bottom:30px;
+	}
+
+	main article .about2, main article .about4, main article .about5 {
+		margin-right:30px;
+		margin-bottom:30px;
+	}
+
 }
 
 /*main article .address, main article .subway, main article .bus {
@@ -812,7 +829,7 @@ main article .about5 {
 }
 
 /* Larger than tablet */
-@media (min-width: 900px) {
+@media (min-width: 950px) {
 
 	main nav .info {
 		width:80%;
