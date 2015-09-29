@@ -409,7 +409,7 @@ main hr {
 	}
 
 	.jumbo.index {
-		height:700px;
+		height:600px;
 	}
 
 	.jumbo img {
@@ -460,7 +460,7 @@ main article.index {
 
 main article h5 {
 	color:#87786B;
-	margin-top:30px;
+	margin-top:50px;
 	margin-bottom:15px;
 	font-weight: bold;
 	line-height:1.3em;
@@ -495,16 +495,16 @@ main article img.full {
 }
 
 main article .icons {
-	margin:50px 0;
+	margin-bottom:50px;
 	font-size:0.85em;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
 main article .icons > div {
-	background-color: #8a7568;
+	background-color: #E8E8E8;
 	padding:3px;
 	text-align:center;
-	color:white;
+	color:#8a7568;
 	margin-top:2px;
 	margin-bottom: 2px;/*
 	border-radius:5px;*/
@@ -578,10 +578,14 @@ main article .detail {
 
 main article .column p, main article p.liHeader{
 	text-align:center;
-	border-bottom:2px solid #C1AC99;
-	padding:10px 0;
+	border-top:2px solid #C1AC99;
+	border-top:3px solid #E8E8E8;
+	padding:7px 0;
 	color:#87786B;
-	font-size:1.1em;
+	font-size:0.9em;
+	margin-bottom:0.8em;
+	border-bottom:1px solid #E8E8E8;
+
 }
 
 main article .column li, main article .columns li {
@@ -623,11 +627,11 @@ nav .info .midMenu {/*
 	text-align:left;
 	letter-spacing: 0.02em;
 	background-color: #C1AC99;
-	padding-top: 30px;
+	padding-top: 15px;
 	color:white;
 	font-size: 1.1em;
 	padding-left:30px;
-	padding-bottom:30px;
+	padding-bottom:15px;
 	border-bottom:3px solid white;
 }
 
@@ -805,7 +809,7 @@ p.description {
 	font-size:1em;
 	color:#8a7568;
 	margin-top:10px;
-	margin-bottom:60px;
+	margin-bottom:40px;
 	width:auto;
 }
 
@@ -987,6 +991,11 @@ main article .about5 {
 		position:relative;
 		width:auto;
 	}	
+
+	main .info .midMenu {
+		padding-top:30px;
+		padding-bottom:30px;
+	}
 
 }
 
