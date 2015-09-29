@@ -57,7 +57,7 @@ header .logo p {
 	position:absolute;
 	font-size:0.72em;
 	width:100%;
-	top:70px;
+	top:66px;
 	color:#EEEEEE;
 	font-weight:normal;
 	letter-spacing: 0.05em;
@@ -82,12 +82,16 @@ header .logo p {
 
 @media (min-width: 1000px) {
 	
+	header .logo {
+		left:-50px;
+	}
+
 	header:hover .logo img {
 		transform:translateY(15px);
 	}
 
 	header:hover .logo p {
-		top:90px;
+		top:80px;
 	}
 
 	header:hover nav {
@@ -113,8 +117,13 @@ header .logo img {
 /* NAVIGATION */
 
 nav {
-	background-color: #E8E8E8;
+
+	overflow:hidden;
+}
+
+header nav {
 	background-color: white;
+	background-color: #2D2D2D;
 	overflow:hidden;
 	height:65px;/*
 	border-bottom: 1px solid #E8E8E8;*/
@@ -210,7 +219,7 @@ nav .mobileNav ul li a {
 	font-size: 2.3em;
 	font-weight: 300;
 	display: block;
-	color: #C1B2A9;
+	color: #c1ac99;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
@@ -221,19 +230,23 @@ nav .mobileNav ul li a:focus {
 }
 
 @media (min-width: 400px) {
-	nav {
+	header nav {
 		height:45px;
+		background-color: white;		
 	}
 	nav .mainNav {
 		height:auto;
 	}
 
 	header nav .menuOpen{
-		width:20px;
-		height:20px;
+		width:25px;
+		height:25px;
 		top:10px;
+		background: url(../imgs/menu_icon_blk.png) no-repeat center center;
+		background-size: contain;
 
 	}	
+	
 
 }
 
@@ -266,8 +279,9 @@ nav .mainNav, nav .subNav {
 }
 
 nav .subNav {
+
 	margin-top:0;
-	font-size: 0.75em;
+	font-size: 0.72em;
 	max-width:100%;
 	background-color: #2D2D2D;
 	color:white;
@@ -293,7 +307,7 @@ nav .subNav .subNavContainer ul:hover {
 
 nav .subNav .subNavContainer ul li {
 	list-style:none;
-	margin-bottom:2px;
+	margin-bottom:5px;
 	cursor:pointer;
 }
 
@@ -308,26 +322,24 @@ nav .subNav .subNavContainer ul li:hover {
 main {
   position: relative;
   width: 100%;
-  margin:0 auto;
-  margin-top:-80px;
-  padding-top: 10px;
+  margin:0 auto;/*
+  margin-top:-80px;*/
+  margin-top:60px;
   padding-bottom:10px;
   box-sizing: border-box; 
   background-color:white;
 
 }
 
-main.index {
-	margin-top:0;
-}
 
 
 main .pwd {
-	margin-left:1.5em;
+	margin-right:1em;
 	font-size:0.6em;
 	letter-spacing: 0.05em;
-	margin-top:6px;
-	margin-bottom:11px;
+	padding:20px 0;
+	margin-bottom:0;
+	text-align: right;
 }
 
 main .pwd .arrow{
@@ -343,12 +355,12 @@ main .pwd .arrow{
 
 	main {
 		width:95%;
+	  margin-top:0;		
 	}
 
 	main .pwd {
 		font-size:0.8em;
 		margin-top: 0;
-		margin-bottom:-2px;
 	}
 
 	main .pwd .arrow{
@@ -368,25 +380,23 @@ main hr {
 
 .jumbo {
 	position:relative;
-	width:100%;
-	height:300px;
-	overflow:hidden;
-	margin-bottom:-30px;
+	width:100%;/*
+	height:300px;*/
+	height:auto;
+	overflow:hidden;/*
+	margin-bottom:-30px;*/
+	transform: translateY(65px);
 }
 
 .jumbo img {
 	position:relative;
-	min-height:25%;
+	min-height:25%;/*
+	height:300px;*/
+	width:100%;
 	z-index:-99;
-	height:300px;
 	/*transition:transform 0.5s;*/
 	left:0;
 	margin-left:0;
-	-webkit-transform:translateY(0);
-	   -moz-transform:-moz-translateY(0);
-	        transform:translateY(0) translateX(-100px);
-	-webkit-transform:translateX(-100px);
-	   -moz-transform:-moz-translateX(-100px);
 	        
 
 }
@@ -395,6 +405,7 @@ main hr {
 
 	.jumbo {
 		height:500px;
+		transform: translateY(0);		
 	}
 
 	.jumbo.index {
@@ -402,6 +413,7 @@ main hr {
 	}
 
 	.jumbo img {
+		width:auto;
 		min-height:100%;
 		height:auto;
 		left:50%;
@@ -436,8 +448,8 @@ main nav#subNav {
 
 main article {
 	padding:0 20px;
-	margin-top:5px;
-	max-width:720px;
+	margin-top:5px;/*
+	max-width:720px;*/
 	overflow:hidden;
 }
 
@@ -453,13 +465,20 @@ main article h5 {
 	font-weight: bold;
 	line-height:1.3em;
 	padding-bottom:5px;
+	padding-left:20px;
+	font-size:1.2em;
+	background: url(../imgs/subheading_icon.png) no-repeat;
+	background-size:15px;
+	background-position:0 4px;
 }
 
 main article h4 {
-	font-size:1.4em;
-	margin-top:10px;
-	padding-bottom:10px;
-	margin-bottom:0;
+	font-size:1.6em;
+	margin-top:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	display:inline-block;
+	border-bottom:3px solid #c1ac99;
 }
 
 main article h5.kr {
@@ -482,15 +501,14 @@ main article .icons {
 }
 
 main article .icons > div {
-	background-color: #E8E8E8;
+	background-color: #c1ac99;
 	padding:3px;
 	text-align:center;
-	color:#2D2D2D;
+	color:white;
 	margin-top:2px;
-	margin-bottom: 2px;
-	border-radius:5px;
+	margin-bottom: 2px;/*
+	border-radius:5px;*/
 	font-family:inherit;
-	font-weight:bold;
 
 }
 
@@ -499,10 +517,10 @@ main article .icons > div > div{
 	width:70%;
 	float:right;
 	text-align:center;
-	color:#2D2D2D;
+	color:#8a7568;
 	font-family:inherit;
-	font-weight:normal;
-	border-radius:5px;
+	font-weight:normal;/*
+	border-radius:5px;*/
 
 }
 
@@ -514,8 +532,8 @@ main article .icons > div.one-half > div,main article .icons > div.twelve > div{
 }
 
 main article .content {
-	font-size:0.85em;
-	line-height: 2em;
+	font-size:0.82em;
+	line-height: 1.8em;
 	letter-spacing: -0.01em;
 	font-family: 'Nanum Gothic', sans-serif;
 	margin-top:25px;
@@ -563,6 +581,7 @@ main article .column p, main article p.liHeader{
 	border-bottom:1px solid #C1AC99;
 	padding:10px 0;
 	color:#87786B;
+	font-size:1.1em;
 }
 
 main article .column li, main article .columns li {
@@ -580,7 +599,7 @@ main article .column li.special, main article .columns li.special  {
 }
 
 main article .column li.price, main article .columns li.price {
-	background-color: #9E8754;
+	background-color: #C1AC99;
 	color:white;
 	font-size:1em;
 	font-weight: bold;
@@ -593,41 +612,42 @@ nav .info {
 	width:100%;
 	font-size:0.9em;
 	margin-right:auto;
-	margin-left:auto;/*
-	background-color: #E8E8E8;*/
-	border-right:1px solid #E1E1E1;
-	border-bottom:1px solid #E1E1E1;
+	margin-left:auto;
+	background-color: #E8E8E8;
 	margin-bottom:20px;
-	padding-left: 20px;
+	padding-bottom:10px;
 }
 
 nav .info .midMenu {
 	font-weight: bold;
 	text-align:left;
-	letter-spacing: 0.07em;
-	/*background-color: #87786B;
-	background-color: #2D2D2D;*/
-	padding-top: 12px;
+	letter-spacing: 0.02em;
+	background-color: #8a7568;
+	padding-top: 30px;
 	color:white;
-	color:#2D2D2D;
-	font-size: 1.2em;
-	padding-bottom: 0;	
+	font-size: 1.1em;
+	padding-left:30px;
+	padding-bottom:30px;
 }
 
 nav .info ul {
 	color:#87786B;
 	font-size:0.8em;
 	margin:25px 0;
+	padding-left:15px;
+
+	font-family: 'Nanum Gothic', sans-serif;	
 }
 
 nav .info ul li {
 	color:#2D2D2D;
 	font-size:1.2em;
 	list-style:none;
-	margin:4px 0;
-	margin-left:12px;
-	padding-left:0;
+	margin:10px 0;
+	margin-left:10px;
+	padding-left:10px;
 	cursor:pointer;
+	line-height:1.2em;
 }
 
 nav .info ul li:hover {
@@ -638,8 +658,9 @@ nav .info ul li:hover {
 
 nav .info ul li.selected {
 	font-weight: bold;
-	list-style-type:disc;
+	border-left:3px solid #c1ac99;
 	cursor:default;
+	padding-left:7px;
 }
 
 
@@ -650,10 +671,10 @@ nav .info ul li.selected {
 footer {
 	border-top:1px solid #E8E8E8;
 	margin-top:50px;
-	background-color: #87786B;
+	background-color: #8a7568;
 	height:auto;
 	font-size: 0.75em;
-	color:#C1B2A9;
+	color:white;
 	overflow:hidden;
 	padding:10px 20px;
 }
@@ -685,8 +706,9 @@ footer .logo p.phone {
 	font-size: 1.5em;
 	font-weight: bold;
 	padding-bottom:5px;
-	border:1px solid #C1B2A9;
+	border:2px solid rgba(255,255,255,0.5);
 	border-radius: 5px;
+	letter-spacing: 0.1em;
 }
 
 footer br {
@@ -697,38 +719,41 @@ footer .info {
 	margin-top:30px;
 }
 
-footer .info .row {
-}
 
 footer .link {
-	color: #C1B2A9;
+	color: white;
 	margin-top:13px;
 	margin-bottom:13px;
-	font-size:1em;
+	font-size:1.1em;
 	padding:2px 0;
 	text-align: center;
-	border-bottom:1px solid #C1B2A9;
+	border-bottom:1px solid rgba(255,255,255,0.5);
 	font-weight: bold;
 	transition: padding 0.3s ;
 	cursor: pointer;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
-footer .link:hover {
+footer .link a:hover {
 	color: white;
 	border-color:white;
-	padding-bottom:5px;
 }
 
 footer .info p {
-	color: #C1B2A9;
+	font-size:0.9em;
+	color: white;
 	margin-top:20px;
+	color: rgba(255,255,255,0.5);
 }
 
 @media (min-width: 950px) {
 
 	
 	main article h5 {	
+	}
+
+	main article {
+		margin-top:-15px;
 	}
 	
 	footer {
@@ -737,25 +762,29 @@ footer .info p {
 	}
 
 	footer .logo {
-		margin-top:35px;
+		margin-top:43px;
 	}
 
 	footer .logo img {
-		max-width:200px;
+		max-width:160px;
 
 	}
 
 	footer .link {
 		text-align:left;
 		border-bottom:none;
-		padding-left:10px;
-		border-left:2px solid #C1B2A9;
 	}
 
 	footer .link:hover {
 		padding-left:5px;
 		padding-bottom:2px;
 	}
+
+	
+	footer .info .row {
+		border-bottom:1px solid rgba(255,255,255,0.2);
+	}
+
 
 }
 
@@ -771,14 +800,12 @@ p.description {
 	font-weight:bold;*//*
 	font-style:italic;
 	background-color: #87786B;*/
-	line-height:1.2em;
-	font-size:1.1em;
-	padding-left:20px;
-	color:#2D2D2D;
+	line-height:1.4em;
+	font-size:1em;
+	color:#8a7568;
 	margin-top:10px;
-	margin-bottom:50px;
+	margin-bottom:60px;
 	width:auto;
-	border-left:3px solid #2D2D2D;
 }
 
 
@@ -868,7 +895,7 @@ main article .about3 {
 }
 
 main article .about4 {
-	width:25%;
+	width:35%;
 }
 
 main article .about5 {
@@ -880,13 +907,14 @@ main article .about5 {
 @media (min-width: 950px) {
 
 	main article .about1, main article .about3 {
-		margin-left:30px;
-		margin-bottom:30px;
+		margin-left:25px;
+		margin-bottom:25px;
+		margin-right:25px;
 	}
 
 	main article .about2, main article .about4, main article .about5 {
-		margin-right:30px;
-		margin-bottom:30px;
+		margin-right:25px;
+		margin-bottom:25px;
 	}
 
 }
@@ -904,10 +932,12 @@ main article .about5 {
 /* Larger than mobile */
 @media (min-width: 400px) {
 
-	main {
+/*	main {
 		border-radius:10px;	
+	}*/
+	nav .info {/*
+		border-radius: 15px;*/
 	}
-
 
 }
 
@@ -919,7 +949,7 @@ main article .about5 {
 	}
 	nav .info .midMenu {
 		border-bottom:1px solid #E1E1E1;
-		padding-bottom: 15px;
+
 	}
 
 	main hr {
@@ -947,12 +977,19 @@ main article .about5 {
 /* Larger than tablet */
 @media (min-width: 950px) {
 
-	main nav .info {
-		width:80%;
+	main nav .info {/*
+		width:90%;*/
 	}
-	main nav#subNav {
-		width:22%;
+	main nav#subNav {/*
+		width:22%;*/
+		margin-top:-61px;
 	}
+	main .pwd {
+		margin-right: 0;
+		/*display:inline-block;*/
+		position:relative;
+		width:auto;
+	}	
 
 }
 
@@ -966,7 +1003,7 @@ main article .about5 {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
 	nav ul, nav .subNav .subNavContainer {
-		max-width:800px;
+		max-width:900px;
 	}	
 
 	br.w1200 {

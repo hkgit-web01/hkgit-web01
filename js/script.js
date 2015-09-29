@@ -1,4 +1,4 @@
-var Gallery;
+var Gallery={};
 window.onload = function(){
 	var gallery = document.querySelectorAll(".gallery");
 	if(gallery.length){ 
