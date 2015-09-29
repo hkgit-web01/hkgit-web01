@@ -872,8 +872,9 @@ li.button a:hover {
 }
 
 li.button:hover {
-	background-color: #2D2D2D;
+	background-color: #c1ac99;
 	color:white;
+	border:none;
 }
 
 /* IMAGES */
