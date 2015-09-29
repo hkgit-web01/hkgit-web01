@@ -501,7 +501,7 @@ main article .icons {
 }
 
 main article .icons > div {
-	background-color: #c1ac99;
+	background-color: #8a7568;
 	padding:3px;
 	text-align:center;
 	color:white;
@@ -578,7 +578,7 @@ main article .detail {
 
 main article .column p, main article p.liHeader{
 	text-align:center;
-	border-bottom:1px solid #C1AC99;
+	border-bottom:2px solid #C1AC99;
 	padding:10px 0;
 	color:#87786B;
 	font-size:1.1em;
@@ -618,16 +618,17 @@ nav .info {
 	padding-bottom:10px;
 }
 
-nav .info .midMenu {
-	font-weight: bold;
+nav .info .midMenu {/*
+	font-weight: bold;*/
 	text-align:left;
 	letter-spacing: 0.02em;
-	background-color: #8a7568;
+	background-color: #C1AC99;
 	padding-top: 30px;
 	color:white;
 	font-size: 1.1em;
 	padding-left:30px;
 	padding-bottom:30px;
+	border-bottom:3px solid white;
 }
 
 nav .info ul {
@@ -947,10 +948,6 @@ main article .about5 {
 	nav .info {
 		border-bottom:none;
 	}
-	nav .info .midMenu {
-		border-bottom:1px solid #E1E1E1;
-
-	}
 
 	main hr {
 		margin-bottom:30px;
@@ -982,7 +979,7 @@ main article .about5 {
 	}
 	main nav#subNav {/*
 		width:22%;*/
-		margin-top:-61px;
+		margin-top:-26px;
 	}
 	main .pwd {
 		margin-right: 0;
