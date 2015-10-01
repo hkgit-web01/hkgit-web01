@@ -353,8 +353,8 @@ main .pwd .arrow{
 
 @media (min-width: 400px) {
 
-	main {
-		width:95%;
+	main {/*
+		width:95%;*/
 	  margin-top:0;		
 	}
 
