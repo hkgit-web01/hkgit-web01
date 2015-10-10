@@ -382,6 +382,9 @@ main hr {
 	height:300px;*/
 	height:auto;
 	overflow:hidden;
+}
+
+.jumbo.index {
 	margin-bottom:-30px;
 }
 
@@ -467,6 +470,7 @@ main hr {
 
 	.jumbo.index {
 		height:600px;
+		margin-bottom:0;
 	}
 
 	.jumbo img {
