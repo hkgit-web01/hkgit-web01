@@ -382,25 +382,38 @@ main hr {
 	height:300px;*/
 	height:auto;
 	overflow:hidden;
+	padding-top:50px;
 }
 
 .jumbo.index {
 	margin-bottom:-30px;
+	padding-top:0;
 }
 
 .jumbo img {
 	position:absolute;
+	position:relative;
 	min-height:25%;/*
 	height:300px;*/
 	width:100%;
-	z-index:-99;
-	margin-top:-300px;
+	z-index:-99;/*
+	margin-top:-300px;*/
 	/*transition:transform 0.5s;*/
 	left:0;
 	margin-left:0;
 	opacity:1;
 	transition:opacity 0.8s;
  
+}
+
+.jumbo.index img {
+	position:absolute;
+	margin-top:-300px;
+
+
+}
+
+.jumbo img {
 
 }
 
@@ -485,7 +498,7 @@ main hr {
 
 	.jumbo.index figure {
 		margin:0;
-		margin-top:-550px;
+		margin-top:-250px;
 
 
 	}
@@ -1027,8 +1040,8 @@ div.notice {/*
 /* Big Button */
 .index .bigButton {
 	text-align: center;
-	margin-top:40px;
-	margin-bottom:80px;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 
@@ -1147,6 +1160,12 @@ main article .about5 {
 	div.notice {
 		padding:50px 0;
 	}
+	
+	.index .bigButton {
+		text-align: center;
+		margin-top:40px;
+		margin-bottom:80px;
+	}	
 
 }
 
