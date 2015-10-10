@@ -539,6 +539,8 @@ main {
 main nav#subNav {
 	word-wrap: break-word;
 	height:auto;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 /* ARTICLE */
