@@ -44,7 +44,6 @@ window.onload = function(){
 
 	}
 	
-
 	var menuOpenDom = document.querySelectorAll(".menuOpen");
 	menuOpenDom[0].onclick = function(){
 		document.querySelector(".mobileNav").classList.add("open");
@@ -55,7 +54,61 @@ window.onload = function(){
 		document.querySelector(".mobileNav").classList.remove("open");
 	};
 
+	if(Jumbotron) Jumbotron.loop(true);	
+
+
 };
+
+
+if (document.querySelectorAll(".jumboContent").length) {
+		// index page jumbotron
+	var Jumbotron = (function() {
+
+		//init
+		var dom = document.querySelectorAll(".jumboContent");
+		var domFig = document.querySelector(".jumbo figure");
+		var imageHandle=[];
+		var styleHandle = document.getElementById("jumboContent").style;
+		var current = 0;
+		var loopHandle;
+
+		for(var i = 0; i < domFig.children.length; i++){
+			imageHandle.push(domFig.children[i]);
+		}
+
+
+		var next = function() {
+			if (current == dom.length-1) current = 0;
+			else current += 1;
+			styleHandle.marginTop = "-" + current + "00%";
+
+			console.log(domFig.children[current]);
+			console.log(domFig.children[0]);
+			domFig.insertBefore(imageHandle[current], domFig.children[0]);
+
+			for(var i = 0; i < domFig.children.length; i++){
+				domFig.children[i].classList.remove("show");
+			}
+			domFig.children[0].classList.add("show");
+			
+
+		};
+
+		var loop = function(bool) {
+			if(bool) {
+				loopHandle = window.setInterval(Jumbotron.next, 4500);
+			}
+			else {
+				window.clearInterval(loopHandle);
+			}
+		};
+
+		return {
+			next: next,
+			loop: loop
+		};
+	})();
+}
 
 
 
