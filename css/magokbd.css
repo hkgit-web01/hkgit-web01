@@ -39,7 +39,6 @@ header {
 }
 
 
-
 /* LOGO */
 
 header .logo {
@@ -562,7 +561,7 @@ main article .gallery.loaded img {
 }
 
 main article .gallery img.thumb {
-	width:25%;
+	width:33.33%;
 	opacity:0.5;
 	cursor:pointer;
 	box-sizing:border-box;
