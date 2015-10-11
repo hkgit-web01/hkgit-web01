@@ -1116,6 +1116,7 @@ main article.index .bigButton p {
 }
 
 .pCard .rectangle {
+	font-size:0.8em;
 	width:85%;/*
 	height:150px;*/
 	height:auto;
@@ -1258,6 +1259,9 @@ main article .about5 {
 		margin-top:40px;
 		margin-bottom:80px;
 	}	
+	.pCard .rectangle {
+		font-size:1em;
+	}
 
 }
 
