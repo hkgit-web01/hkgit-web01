@@ -62,6 +62,8 @@ header .logo p {
 	letter-spacing: 0.05em;
 	padding-top:2px;
 	transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+
 }
 
 @media (min-width: 400px) {
@@ -87,6 +89,7 @@ header .logo p {
 
 	header:hover .logo img {
 		transform:translateY(15px);
+		-webkit-transform: translateY(15px);
 	}
 
 	header:hover .logo p {
@@ -111,6 +114,7 @@ header .logo img {
 	width:80%;
 	margin-top:8px;
 	transition: transform 0.4s;
+	-webkit-transition: -webkit-transform 0.4s;
 }
 
 /* NAVIGATION */
@@ -404,6 +408,7 @@ main hr {
 	margin-left:0;
 	opacity:1;
 	transition:opacity 0.8s;
+	-webkit-transition:opacity 0.8s;
  
 }
 
@@ -439,6 +444,22 @@ main hr {
 	background-color: rgba(138, 117, 104, 0.7);
 }
 
+.jumbo.index .container .rectangle.fadeIn {
+	animation: fadeIn 1s ease-in;
+	-webkit-animation: fadeIn 1s ease-in;
+	
+}
+
+@keyframes fadeIn {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}
+
 /*.jumbo.nonIndex .rectangle h1 {
 	border-color:white;
 	height:60px;
@@ -472,24 +493,24 @@ main hr {
 
 .jumbo #jumboContent {
 	transition: all 1.2s ;
+	-webkit-transition: all 1.2s ;
 }
 
 .jumbo.index img {
 
 	opacity:0;
-	transition-delay:0;
 }
 
 .jumbo img.show {
 	opacity:1;
-	transition-delay:1s;
 }
 
 @media (min-width: 400px) {
 
 	.jumbo {
 		height:500px;
-		transform: translateY(0);	
+		transform: translateY(0);
+		-webkit-transform: translateY(0);		
 		margin-bottom:0;	
 	}
 
@@ -505,7 +526,8 @@ main hr {
 		left:50%;
 		margin-top:-100px;
 		margin-left:-750px;	
-		transform: translateY(-30px);		
+		transform: translateY(-30px);	
+		-webkit-transform: translateY(-30px);
 	}
 
 	.jumbo.index figure {
@@ -852,6 +874,7 @@ footer .link {
 	border-bottom:1px solid rgba(255,255,255,0.5);
 	font-weight: bold;
 	transition: padding 0.3s ;
+	-webkit-transition: padding 0.3s ;
 	cursor: pointer;
 	font-family: 'Nanum Gothic', sans-serif;
 }
@@ -971,6 +994,7 @@ a {
 li.button {
 	width:100%;
 	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
 	background-color: white;
 	height:50px;
 }
@@ -1077,10 +1101,12 @@ div.notice {/*
 	border:none;
 	top:-110px;
 	transition: all 0.5s ;
+	-webkit-transition: all 0.5s ;
 }
 
 .inlineB img:hover {
 	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
 	opacity:0.3;
 }
 
@@ -1345,6 +1371,7 @@ main article .about5 {
 		left:0;
 		margin-left:0;
 		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
 	}
 }
 
@@ -1352,5 +1379,6 @@ main article .about5 {
 @media (min-width: 1755px) {
 	.jumbo img{
 		transform: translateY(-150px);
+		-webkit-transform: translateY(-150px);
 	}
 }
