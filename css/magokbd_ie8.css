@@ -490,11 +490,13 @@ main hr {
 
 .jumbo.index img {
 
-	opacity:0;
+	filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=0)”;
+	filter: alpha(opacity=0);		
 }
 
 .jumbo img.show {
-	opacity:1;
+	filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=100)”;
+	filter: alpha(opacity=100);		
 }
 
 /*@media (min-width: 400px) {*/
@@ -1089,14 +1091,16 @@ div.notice {/*
 
 .inlineB img {
 	width:100%;
-	opacity:0.1;
+	filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=10)”;
+	filter: alpha(opacity=10);	
 	position: relative;
 	border:none;
 	top:-110px;
 }
 
 .inlineB img:hover {
-	opacity:0.3;
+	filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=30)”;
+	filter: alpha(opacity=30);		
 }
 
 .inlineB h1 {
