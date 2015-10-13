@@ -940,9 +940,9 @@ p.description {
 
 
 
-br {
+/*br {
 	display:none;
-}
+}*/
 
 br.all{
 	display:block;
