@@ -1284,6 +1284,35 @@ main article .about5 {
 	margin-top:5px;
 }
 
+/* FORM */
+
+form label {
+	display:inline;
+	color:#87786B;
+}
+
+form th, form td {
+	border:none;
+}
+
+form input[type="submit"] {
+	font-size:1em;
+}
+
+form input[type="submit"]:hover {
+	background-color: #c1ac99;
+	border:none;
+	color:white;
+}
+
+form input[type]:focus, form select:focus {
+	border-color:#87786B;
+}
+
+form textarea {
+	width:500px;
+	height:200px;
+}
 /* Larger than tablet */
 @media (min-width: 950px) {
 
