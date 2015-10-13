@@ -2,7 +2,8 @@ var Gallery={};
 window.onload = function(){
 	var gallery = document.querySelectorAll(".gallery");
 	if(gallery.length){ 
-		gallery[0].classList.add("loaded");
+		// gallery[0].classList.add("loaded");
+		classie.add(gallery[0], 'loaded');
 
 		Gallery = (function(){
 
@@ -13,7 +14,8 @@ window.onload = function(){
 			function refreshThumb() {
 				var i;
 				for (i = 0; i < galleryImages.length; i++){
-					galleryImages[i].classList.remove("selected");
+					// galleryImages[i].classList.remove("selected");
+					classie.remove(galleryImages[i], 'selected');
 				}	
 			}
 
@@ -30,7 +32,8 @@ window.onload = function(){
 			for (i = 0; i < galleryImages.length; i++){
 				galleryImages[i].onclick = function(){
 					screenUpdate(this.src);
-					this.classList.add("selected");
+					// this.classList.add("selected");
+					classie.add(this, 'selected');
 				};
 			}
 
@@ -46,12 +49,14 @@ window.onload = function(){
 	
 	var menuOpenDom = document.querySelectorAll(".menuOpen");
 	menuOpenDom[0].onclick = function(){
-		document.querySelector(".mobileNav").classList.add("open");
+		// document.querySelector(".mobileNav").classList.add("open");
+		classie.add(document.querySelector(".mobileNav"), 'open');
 	};
 
 	var menuCloseDom = document.querySelectorAll(".menuClose");
 	menuCloseDom[0].onclick = function(){
-		document.querySelector(".mobileNav").classList.remove("open");
+		// document.querySelector(".mobileNav").classList.remove("open");
+		classie.remove(document.querySelector(".mobileNav"), 'open');
 	};
 
 	if(Jumbotron) Jumbotron.loop(true);	
@@ -87,9 +92,11 @@ if (document.querySelectorAll(".jumboContent").length) {
 			domFig.insertBefore(imageHandle[current], domFig.children[0]);
 
 			for(var i = 0; i < domFig.children.length; i++){
-				domFig.children[i].classList.remove("show");
+				// domFig.children[i].classList.remove("show");
+				classie.remove(domFig.children[i], 'show');
 			}
-			domFig.children[0].classList.add("show");
+			// domFig.children[0].classList.add("show");
+			classie.add(domFig.children[0], 'show');
 			
 
 		};

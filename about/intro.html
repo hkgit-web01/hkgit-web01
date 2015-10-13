@@ -6,8 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>마곡 Birthday 산후조리원</title>
 	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/skeleton.css">
-	<link rel="stylesheet" href="../css/magokbd.css">
+	<link rel="stylesheet" href="../css/skeleton.css" media="(min-width:0px)">
+	<link rel="stylesheet" href="../css/magokbd.css" media="(min-width:0px)"><!--media attribute prevents ie8 from loading the file-->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="../css/skeleton_ie8.css">
+		<link rel="stylesheet" type="text/css" href="../css/magokbd_ie8.css" />
+	<![endif]--> 	
+	<!--[if lte IE 8]>
+    	<script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+	<script src="../bower_components/classie/classie.js"></script>
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -33,7 +41,7 @@
 		<div class="container">
 			<div class="logo">
 				<a href="../index.html">
-					<img src="../imgs/logo_full.svg" alt="">
+					<img src="../imgs/logo_full.png" alt="">
 					<p>Postnatal Care</p>
 				</a>
 			</div>	
@@ -200,7 +208,7 @@ Birthday 산후조리원을 선택하신 모든 산모님들께서 <br class="w7
 	<footer>
 		<div class="container">
 			<div class="three columns logo">
-				<img src="../imgs/logo_text.svg" alt="">
+				<img src="../imgs/logo_text.png" alt="">
 				<p>Postnatal Care</p>
 				<p class="phone">02-2664-6999</p>
 			</div>
