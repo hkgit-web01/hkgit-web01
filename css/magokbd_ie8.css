@@ -435,8 +435,9 @@ main hr {
 	position:relative;
 }
 
-.jumbo.index .container .rectangle {
-	background-color: rgba(138, 117, 104, 0.7);
+.jumbo.index .container .rectangle {/*
+	background-color: rgba(138, 117, 104, 0.7);*/
+	background-image: url(../imgs/rect_bg.png);
 }
 
 .jumbo.index .container .rectangle.fadeIn {/*
