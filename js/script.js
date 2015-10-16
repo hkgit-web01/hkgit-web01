@@ -87,8 +87,8 @@ if (document.querySelectorAll(".jumboContent").length) {
 			else current += 1;
 			styleHandle.marginTop = "-" + current + "00%";
 
-			console.log(domFig.children[current]);
-			console.log(domFig.children[0]);
+			// console.log(domFig.children[current]);
+			// console.log(domFig.children[0]);
 			domFig.insertBefore(imageHandle[current], domFig.children[0]);
 
 			for(var i = 0; i < domFig.children.length; i++){
