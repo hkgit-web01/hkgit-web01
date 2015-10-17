@@ -16,7 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "skeleton": "~2.0.4"
+    "skeleton": "~2.0.4",
+    "slick-carousel": "~1.5.8"
   },
   "devDependencies": {
     "html5shiv": "~3.7.3"
