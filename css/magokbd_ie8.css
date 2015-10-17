@@ -719,7 +719,7 @@ main article .column p, main article p.liHeader{
 
 }
 
-main article .column li, main article .columns li {
+main article .column li, main article .columns li, main article ul.normal li {
 	border:1px solid #E8E8E8;
 	text-align:center;
 	list-style:none;
@@ -727,6 +727,12 @@ main article .column li, main article .columns li {
 	font-size: 0.8em;
 	border-radius:5px;
 	font-family: 'Nanum Gothic', sans-serif;
+}
+
+main article ul.normal li{
+	text-align:left;
+	list-style:circle;
+	border:none;
 }
 
 main article .column li.special, main article .columns li.special  {
@@ -1286,6 +1292,24 @@ main article .about4 {
 main article .about5 {
 	width:60%;
 	margin-top:5px;
+}
+
+article .times .columns {
+	text-align:center;
+	margin-top:20px;
+}
+
+article .times .columns p {
+	margin-top:10px;
+	color:#87786B;
+	font-size:0.9em;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+article .times img {
+	border:none;
+	width:80%;
+	max-width:200px;
 }
 
 /* FORM */
