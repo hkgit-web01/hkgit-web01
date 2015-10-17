@@ -1078,10 +1078,12 @@ div.notice.full li {
 div.notice.full li.selected {
 	max-height:200px;
 	padding-bottom:0;
-	font-size:1em;
+	font-size:0.8em;
+	font-weight:bold;
 }
 
 div.notice.full p {
+	font-weight:normal;
 	margin-top:15px;
 	margin-bottom:0;
 	border-top:2px solid #E8E8E8;

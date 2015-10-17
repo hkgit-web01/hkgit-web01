@@ -86,8 +86,8 @@
 						</ul><ul>
 							<a href="../customer/notice.html"><li>공지사항</li></a>
 							<a href="../customer/inquiry.html"><li>예약문의</li></a>
+							<a href="../customer/gallery.html"><li>포토갤러리</li></a>
 							<li>자주하시는 질문(준비중)</li>
-							<li>포토갤러리(준비중)</li>
 						</ul>	
 					</div>
 					
@@ -122,8 +122,9 @@
 						<!-- <p class="topMenu">Facilities</p> -->
 						<p class="midMenu">Customer</p>
 						<ul class="kr">
-							<li class="selected">공지사항</li>
+							<a href="notice.html"><li>공지사항</li></a>
 							<a href="inquiry.html"><li>예약문의</li></a>
+							<li class="selected">포토갤러리</li>
 						</ul>
 
 					</div>
@@ -139,24 +140,97 @@
 					<div class="row gallery">
 						<figure>
 							<img src="../imgs/facilities/vvip_banner.jpg">
-							VIP ROOM
+							VIP Room
 						</figure>
 						<figure>
 							<img src="../imgs/facilities/vvip_2.jpg">
-							VIP ROOM
+							VIP Room
 						</figure>
 						<figure>
 							<img src="../imgs/facilities/vvip_3.jpg">
-							VIP ROOM
+							VIP Room
 						</figure>
 						<figure>
 							<img src="../imgs/facilities/suiteroom_1.jpg">
-							FAMILY SUITE
+							Family Suite
 						</figure>
 						<figure>
 							<img src="../imgs/facilities/suiteroom_2.jpg">
-							FAMILY SUITE
-						</figure>												
+							Family Suite
+						</figure>			
+						<figure>
+							<img src="../imgs/facilities/deluxe_room.jpg">
+							Deluxe Room
+						</figure>
+						<figure>
+							<img src="../imgs/facilities/deluxe_room1.jpg">
+							Deluxe Room
+						</figure>															
+						<figure>
+							<img src="../imgs/facilities/bathroom.jpg">
+							Bathroom
+						</figure>			
+
+						<figure>
+							<img src="../imgs/banner/livingroom_banner.jpg">
+							거실
+						</figure>		
+						<figure>
+							<img src="../imgs/banner/livingroom2_banner.jpg">
+							거실
+						</figure>								
+						<figure>
+							<img src="../imgs/facilities/babyroom.jpg">
+							신생아실
+						</figure>				
+						<figure>
+							<img src="../imgs/about/viruskiller.jpg">
+							신생아실 Virus Killer
+						</figure>																			
+						<figure>
+							<img src="../imgs/facilities/self_bar.jpg">
+							Self-Bar
+						</figure>		
+						<figure>
+							<img src="../imgs/facilities/diningroom_1.jpg">
+							Dining Room
+						</figure>								
+						<figure>
+							<img src="../imgs/facilities/food_wide.jpg">
+							Sample Menu
+						</figure>		
+						<figure>
+							<img src="../imgs/facilities/food_wide2.jpg">
+							Sample Menu
+						</figure>		
+						<figure>
+							<img src="../imgs/facilities/massage_1.jpg">
+							Massage Room
+						</figure>								
+						<figure>
+							<img src="../imgs/facilities/massageroom_4.jpg">
+							Massage Room
+						</figure>		
+						<figure>
+							<img src="../imgs/facilities/massageroom_5.jpg">
+							Massage Room
+						</figure>		
+						<figure>
+							<img src="../imgs/facilities/footroom.jpg">
+							Foot Room
+						</figure>			
+						<figure>
+							<img src="../imgs/facilities/footroom_1.jpg">
+							Foot Room
+						</figure>											
+						<figure>
+							<img src="../imgs/facilities/footroom_2.jpg">
+							Foot Room
+						</figure>	
+						<figure>
+							<img src="../imgs/facilities/caregate.jpg">
+							Care Gate 위생관리
+						</figure>							
 					</div>
 
 					<div class="slider-nav">
@@ -165,6 +239,24 @@
 						<img src="../imgs/facilities/vvip_3.jpg">
 						<img src="../imgs/facilities/suiteroom_1.jpg">
 						<img src="../imgs/facilities/suiteroom_2.jpg">
+						<img src="../imgs/facilities/deluxe_room.jpg">
+						<img src="../imgs/facilities/deluxe_room1.jpg">		
+						<img src="../imgs/facilities/bathroom.jpg">		
+						<img src="../imgs/banner/livingroom_banner.jpg">
+						<img src="../imgs/banner/livingroom2_banner.jpg">
+						<img src="../imgs/facilities/babyroom.jpg">					
+						<img src="../imgs/about/viruskiller.jpg">			
+						<img src="../imgs/facilities/self_bar.jpg">
+						<img src="../imgs/facilities/diningroom_1.jpg">
+						<img src="../imgs/facilities/food_wide.jpg">
+						<img src="../imgs/facilities/food_wide2.jpg">
+						<img src="../imgs/facilities/massage_1.jpg">
+						<img src="../imgs/facilities/massageroom_4.jpg">
+						<img src="../imgs/facilities/massageroom_5.jpg">
+						<img src="../imgs/facilities/footroom.jpg">
+						<img src="../imgs/facilities/footroom_1.jpg">
+						<img src="../imgs/facilities/footroom_2.jpg">
+						<img src="../imgs/facilities/caregate.jpg">
 					</div>
 
 				</article>
@@ -210,11 +302,10 @@
 
 		$('.slider-nav').slick({
 		  slidesToShow: 4,
-		  slidesToScroll: 1,
+		  slidesToScroll: 4,
 		  asNavFor: '.row.gallery',
-		  dots: true,
 		  arrows: true,
-		  centerMode: true,
+		  swipeToSlide: true,
 		  focusOnSelect: true
 		});
 
