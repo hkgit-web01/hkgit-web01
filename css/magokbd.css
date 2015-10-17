@@ -1066,6 +1066,29 @@ div.notice {/*
 	padding:50px 0;*/
 }
 
+div.notice.full li {
+	max-height:20px;
+	overflow:hidden;
+	transition:all 0.5s;
+}
+
+div.notice.full li.selected {
+	max-height:200px;
+	padding-bottom:0;
+	font-size:1em;
+}
+
+div.notice.full p {
+	margin-top:15px;
+	margin-bottom:0;
+	border-top:2px solid #E8E8E8;
+	padding: 10px;
+	padding-bottom:20px;
+	margin-left:-10px;
+	margin-right:-10px;
+	background-color: #EFEFEF;
+}
+
 .noticeContent {
 }
 
@@ -1369,6 +1392,10 @@ form textarea {
 	}
 	div.notice {
 		padding:50px 0;
+	}
+
+	div.notice.full {
+		padding:25px 0;
 	}
 	
 	.index .bigButton {

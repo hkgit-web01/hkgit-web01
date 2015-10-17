@@ -79,8 +79,8 @@
 							<a href="guide/terms.html"><li>입실안내</li></a>
 							<a href="guide/visits.html"><li>면회, 준수사항 </li></a>
 						</ul><ul>
+							<a href="customer/notice.html"><li>공지사항</li></a>
 							<a href="customer/inquiry.html"><li>예약문의</li></a>
-							<li>공지사항(준비중)</li>
 							<li>자주하시는 질문(준비중)</li>
 							<li>포토갤러리(준비중)</li>
 						</ul>		
@@ -224,77 +224,77 @@
 	<script>
 
 
-		var Notice = (function(){
-			var notice;
-			var domNoticeContent, domNoticeContentHeader, domNoticeContentP, domNoticeLi;
-			var myFirebaseRef = new Firebase("https://magok-birthday.firebaseio.com/");
-    		var noticeRef = myFirebaseRef.child("notice");
+	var Notice = (function(){
+		var notice;
+		var domNoticeContent, domNoticeContentHeader, domNoticeContentP, domNoticeLi;
+		var myFirebaseRef = new Firebase("https://magok-birthday.firebaseio.com/");
+		var noticeRef = myFirebaseRef.child("notice");
 
-    		noticeRef.orderByKey().limitToLast(5).once("value", function(data) {
-    			console.log(data.val().reverse());
-    			notice = data.val().reverse();
+		noticeRef.orderByKey().limitToLast(5).once("value", function(data) {
+			console.log(data.val().reverse());
+			notice = data.val().reverse();
 
-    			//init
-				var domFrag = document.createDocumentFragment();
-				for (var i = 0; i < notice.length; i++){
-					var tempLi = document.createElement("li");
-					// tempLi.childNodes[0].nodeValue = notice[i].title;
-					var tempSpan = document.createElement("span");
-					// tempSpan.childNodes[0].nodeValue = notice[i].date;
-					tempLi.appendChild(document.createTextNode(notice[i].title));
-					classie.add(tempLi, "notice");
-					tempSpan.appendChild(document.createTextNode(notice[i].date));
-					tempLi.appendChild(tempSpan);
-					domFrag.appendChild(tempLi);
-				}
+			//init
+			var domFrag = document.createDocumentFragment();
+			for (var i = 0; i < notice.length; i++){
+				var tempLi = document.createElement("li");
+				// tempLi.childNodes[0].nodeValue = notice[i].title;
+				var tempSpan = document.createElement("span");
+				// tempSpan.childNodes[0].nodeValue = notice[i].date;
+				tempLi.appendChild(document.createTextNode(notice[i].title));
+				classie.add(tempLi, "notice");
+				tempSpan.appendChild(document.createTextNode(notice[i].date));
+				tempLi.appendChild(tempSpan);
+				domFrag.appendChild(tempLi);
+			}
 
-				var domNoticeUl = document.querySelector(".notice ul");
-				domNoticeUl.appendChild(domFrag);
-				classie.add(domNoticeUl.children[0], "selected");
+			var domNoticeUl = document.querySelector(".notice ul");
+			domNoticeUl.appendChild(domFrag);
+			classie.add(domNoticeUl.children[0], "selected");
 
-				domNoticeLi = document.querySelectorAll("li.notice");
-				for (var i = 0; i < domNoticeLi.length; i++){
-					domNoticeLi[i].onclick = (function(inneri){
-							
-						return function() {
-							Notice.update(inneri);	
-							Notice.updateLi(inneri);
-						};
+			domNoticeLi = document.querySelectorAll("li.notice");
+			for (var i = 0; i < domNoticeLi.length; i++){
+				domNoticeLi[i].onclick = (function(inneri){
 						
-					})(i);
-				}
-				domNoticeContent = document.querySelector(".noticeContent");			
-				domNoticeContentHeader = domNoticeContent.querySelector("h5");
-				domNoticeContentP = domNoticeContent.querySelector("p");
+					return function() {
+						Notice.update(inneri);	
+						Notice.updateLi(inneri);
+					};
+					
+				})(i);
+			}
+			domNoticeContent = document.querySelector(".noticeContent");			
+			domNoticeContentHeader = domNoticeContent.querySelector("h5");
+			domNoticeContentP = domNoticeContent.querySelector("p");
 
-				update(0);
+			update(0);
 
-		    });
+	    });
 
 
-			var update = function(num){
-				var obj = notice[num];
-				console.log(obj);
-				console.log(domNoticeContentHeader);
-				domNoticeContentHeader.childNodes[0].nodeValue = obj.title;
-				domNoticeContentP.childNodes[0].nodeValue = obj.content;
-			};
+		var update = function(num){
+			var obj = notice[num];
+			console.log(obj);
+			console.log(domNoticeContentHeader);
+			domNoticeContentHeader.childNodes[0].nodeValue = obj.title;
+			domNoticeContentP.childNodes[0].nodeValue = obj.content;
+		};
 
-			var updateLi = function(num){
-				for (var i = 0; i < domNoticeLi.length; i++){
-					// domNoticeLi[i].classList.remove("selected");
-					classie.remove(domNoticeLi[i], 'selected');
-				}
-				// domNoticeLi[num].classList.add("selected");
-				classie.add(domNoticeLi[num], 'selected');
-			};
+		var updateLi = function(num){
+			for (var i = 0; i < domNoticeLi.length; i++){
+				// domNoticeLi[i].classList.remove("selected");
+				classie.remove(domNoticeLi[i], 'selected');
+			}
+			// domNoticeLi[num].classList.add("selected");
+			classie.add(domNoticeLi[num], 'selected');
+		};
 
-			return {
-				update:update,
-				updateLi:updateLi
-			};
+		return {
+			update:update,
+			updateLi:updateLi
+		};
 
-		})();
+	})();
 	
 
 	// document.querySelector(".jumbo.index .container .rectangle").classList.add("fadeIn");
