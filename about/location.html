@@ -236,9 +236,11 @@
 	var mapWidth, mapHeight;
 
 	// decide according to client width
-	mapWidth = window.innerWidth > 550 ? 680 : 500 ;
-	console.log(window.innerWidth);
+	mapWidth = 680;
 	mapHeight = 400;
+	if (window.innerWidth) {
+		if (window.innerWidth > 550) mapWidth = 680;	
+	}
 	if(window.innerWidth < 400) {
 		mapWidth = 350;
 		mapHeight = 250;
