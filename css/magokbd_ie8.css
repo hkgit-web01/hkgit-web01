@@ -25,6 +25,11 @@ body {
 	font-family: "Playfair Display", "Times New Roman", serif;
 }
 
+#testMap {
+	width:680px;
+	height:400px;
+}
+
 /* HEADER */
 
 header {
