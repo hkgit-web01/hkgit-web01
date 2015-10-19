@@ -28,6 +28,7 @@ body {
 #testMap {
 	width:680px;
 	height:400px;
+	background-image: url(../imgs/about/map_fallback.png);
 }
 
 /* HEADER */

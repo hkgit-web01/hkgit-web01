@@ -32,6 +32,10 @@ body {
 	font-family: "Playfair Display", "Times New Roman", serif;
 }
 
+#testMap {
+	background-image: url(../imgs/about/map_fallback.png);
+}
+
 /* HEADER */
 
 header {
