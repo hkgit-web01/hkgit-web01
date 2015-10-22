@@ -34,6 +34,7 @@ body {
 
 #testMap {
 	background-image: url(../imgs/about/map_fallback.png);
+	width:100%;
 }
 
 /* HEADER */
