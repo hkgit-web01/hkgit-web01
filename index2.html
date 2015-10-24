@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>마곡 Birthday 산후조리원</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css" media="(min-width:0px)">
+	<link rel="stylesheet" href="css/magokbd.css" media="(min-width:0px)"><!--media attribute prevents ie8 from loading the file-->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/skeleton_ie8.css">
+		<link rel="stylesheet" type="text/css" href="css/magokbd_ie8.css" />
+	<![endif]--> 	
+	<!--[if lte IE 8]>
+    	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+	<script src="bower_components/classie/classie.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/modernzr.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	
+	<header>
+
+		<div class="container">
+			<div class="logo">
+				<a href="">
+					<img src="imgs/logo_full.png" alt="">
+					<p>Postnatal Care</p>
+				</a>
+			</div>			
+		</div>
+			
+		<nav role="navigation">
+			<input type="button" class="menuOpen"></input>
+			<div class="mobileNav">
+				<input type="button" class="menuClose"></input>
+				<ul>
+				<li><a href="about/intro.html">About Us</a></li><li><a href="facilities/vip_room.html">Facilities</a></li><li><a href="program/weekly_program.html">Program</a></li><li><a href="guide/preparation.html">Guide</a></li><li><a href="customer/notice.html">Customer</a></li></ul>
+			</div>		
+			<div class="pcNav">
+
+				<ul class="mainNav">
+					<li>About Us</li><li>Facilities</li><li>Program</li><li>Guide</li><li>Customer</li>
+				</ul>
+			
+				<div class="subNav kr">
+					<div class="subNavContainer">
+						<ul>
+							<a href="about/intro.html"><li>인사말</li></a>
+							<a href="about/carecenter.html"><li>조리원 소개</li></a>
+							<a href="about/location.html"><li>오시는 길</li></a>
+						</ul><ul>
+							<a href="facilities/vip_room.html"><li>시설안내</li></a>
+						</ul><ul>
+							<a href="program/weekly_program.html"><li>주간프로그램</li></a>
+							<a href="program/baby_program.html"><li>신생아프로그램</li></a>
+							<a href="program/mother_program.html"><li>산모프로그램</li></a>
+						</ul><ul>
+							<a href="guide/preparation.html"><li>입소 준비물품</li></a>
+							<a href="guide/rates.html"><li>이용안내</li></a>
+							<a href="guide/terms.html"><li>입실안내</li></a>
+							<a href="guide/visits.html"><li>면회, 준수사항 </li></a>
+						</ul><ul>
+							<a href="customer/notice.html"><li>공지사항</li></a>
+							<a href="customer/inquiry.html"><li>예약문의</li></a>
+							<a href="customer/gallery.html"><li>포토갤러리</li></a>
+							<li>자주하시는 질문(준비중)</li>
+						</ul>		
+					</div>
+					
+				</div> <!-- subNav -->
+			</div> <!-- pcNav -->
+		</nav>		
+	</header>
+
+	<div class="jumbo index">
+		<div class="container">
+			<div class="rectangle">
+				<div class="jumboContent" id="jumboContent">
+					<h1>Professional <br>
+						Postnatal <br>
+						Care</h1>
+					<p>
+						전문적인 운영진과 최고급 시설이 <br class="all">함께하는 쾌적한 Healing Space.
+					</p>	
+				</div>
+				<div class="jumboContent">
+					<h1>Delicious &<br>
+						Nutritious <br>
+						Cuisine </h1>
+					<p>
+						산후비만예방과 필수영양을 모두 <br class="all">고려한 식단으로 산모님을 세심하게 배려합니다.
+					</p>	
+				</div>						
+				<div class="jumboContent">
+					<h1>Specialized<br>
+						Mother <br>
+						Care </h1>
+					<p>
+						산모의 산전, 산후 피부관리 및 <br class="all"> 산모 건강관리법 교육을 실시합니다.
+					</p>	
+				</div>				
+			</div>	
+		</div>	
+<!-- 
+		<img src="imgs/banner/livingroom2_banner_wide.jpg" alt=""> 
+		-->
+		<figure>
+			<img src="imgs/banner/cradle_banner.jpg" alt="" class="show">
+			<img src="imgs/banner/food_banner.jpg" alt="" class="">
+			<img src="imgs/banner/massage_banner_wide.jpg" alt="" class="">
+		</figure>
+	</div>
+
+
+	<div class="container">
+	
+		<main class="index">
+
+			<div class="row">
+
+				<article class="twelve columns kr index">
+					<!-- <img src="imgs/banner/sample.jpg" alt="">	 -->
+					
+					<div class="row notice">
+						<div class="six columns">
+							<h5 class="kr">Birthday 공지사항</h5>
+							<ul id="noticeUl"><!----></ul>
+						</div>	
+						<div class="six columns noticeContent">
+							<div>
+								<h5>공지사항 제목 로딩중...</h5>
+								<p>내용 로딩중...</p>
+							</div>
+						</div>	
+					</div>
+					
+					<hr>
+						<h5 class="kr">Birthday 산후조리원</h5>
+						<div class="row detail">
+							<div class="one-third column kr bigButton">
+							<a href="about/carecenter.html">
+								<div class="inlineB">
+									<h1>산후조리원 소개</h1>
+									<img src="imgs/buttonbg/1.jpg" alt=""><!-- 
+									<p>Birthday 산후조리원을 소개합니다</p> -->
+								</div>
+								<p>Birthday 산후조리원을 <br class="all">소개합니다</p>
+							</a>
+							</div>
+							
+							<div class="one-third column kr bigButton">
+							<a href="facilities/vip_room.html">
+								<div class="inlineB">
+									<h1>시설안내</h1>
+									<img src="imgs/buttonbg/2.jpg" alt=""><!-- 
+									<p>Birthday 산후조리원을 소개합니다</p> -->
+								</div>
+								<p>Birthday 산후조리원의 <br class="all">각종 시설들을 소개합니다</p>
+							</a>
+							</div>
+							<div class="one-third column kr bigButton">
+							<a href="guide/rates.html">
+								<div class="inlineB">
+									<h1>이용안내</h1>
+									<img src="imgs/buttonbg/3.jpg" alt=""><!-- 
+									<p>Birthday 산후조리원을 소개합니다</p> -->
+								</div>
+								<p>Birthday 산후조리원의 이용가격 및<br class="all"> 입/퇴실 안내입니다 </p>
+							</a>
+							</div>
+						</div>
+
+				</article>
+			</div>
+
+		</main>	
+
+	</div>
+
+	<footer class="index">
+		<div class="container">
+			<div class="three columns logo">
+				<img src="imgs/logo_text.png" alt="">
+				<p>Postnatal Care</p>
+				<p class="phone">02-2664-6999</p>
+			</div>
+			<div class="eight columns info offset-by-one">
+				<div class="row">
+					<div class="three columns link kr"><a href="about/carecenter.html">조리원소개</a></div>
+					<div class="three columns link kr"><a href="guide/rates.html">이용안내</a></div>
+					<div class="three columns link kr"><a href="guide/terms.html">입실안내</a></div>
+					<div class="three columns link kr"><a href="about/location.html">오시는길</a></div>
+				</div>
+				<p>
+					상호:벌스데이(Birthday) 산후조리원  TEL:02-2664-6999 서울특별시 강서구 마곡중앙5로 81, 6F(마곡동, sb타운)  <br> 대표자:고영희   사업자번호:314-94-02060 <br> Copyright © 2015 벌스데이(Birthday) 산후조리원 All Rights Reserved.
+				</p>
+				
+			</div>
+		</div>
+	</footer>
+	
+	
+
+	<script src="js/script.js"></script>
+	<script>
+
+
+	var Notice = (function(){
+		var notice;
+		var domNoticeContent, domNoticeContentHeader, domNoticeContentP, domNoticeLi;
+		var myFirebaseRef = new Firebase("https://magok-birthday.firebaseio.com/");
+		var noticeRef = myFirebaseRef.child("notice");
+
+		noticeRef.orderByKey().limitToLast(5).once("value", function(data) {
+			alert(data.val().reverse());
+			notice = data.val().reverse();
+
+			//init
+			var domFrag = document.createDocumentFragment();
+			for (var i = 0; i < notice.length; i++){
+				var tempLi = document.createElement("li");
+				// tempLi.childNodes[0].nodeValue = notice[i].title;
+				var tempSpan = document.createElement("span");
+				// tempSpan.childNodes[0].nodeValue = notice[i].date;
+				tempLi.appendChild(document.createTextNode(notice[i].title));
+				classie.add(tempLi, "notice");
+				tempSpan.appendChild(document.createTextNode(notice[i].date));
+				tempLi.appendChild(tempSpan)
+				domFrag.appendChild(tempLi);
+			}
+
+			var domNoticeUl = document.getElementById("noticeUl");
+			domNoticeUl.appendChild(domFrag);
+			classie.add(domNoticeUl.children[0], "selected");
+
+			domNoticeLi = document.querySelectorAll("li.notice");
+			for (var i = 0; i < domNoticeLi.length; i++){
+				domNoticeLi[i].onclick = (function(inneri){
+						
+					return function() {
+						Notice.update(inneri);	
+						Notice.updateLi(inneri);
+					};
+					
+				})(i);
+			}
+			domNoticeContent = document.querySelector(".noticeContent");			
+			domNoticeContentHeader = domNoticeContent.querySelector("h5");
+			domNoticeContentP = domNoticeContent.querySelector("p");
+
+			update(0);
+
+	    });
+
+
+		var update = function(num){
+			var obj = notice[num];
+			console.log(obj);
+			console.log(domNoticeContentHeader);
+			domNoticeContentHeader.childNodes[0].nodeValue = obj.title;
+			domNoticeContentP.childNodes[0].nodeValue = obj.content;
+		};
+
+		var updateLi = function(num){
+			for (var i = 0; i < domNoticeLi.length; i++){
+				// domNoticeLi[i].classList.remove("selected");
+				classie.remove(domNoticeLi[i], 'selected');
+			}
+			// domNoticeLi[num].classList.add("selected");
+			classie.add(domNoticeLi[num], 'selected');
+		};
+
+		return {
+			update:update,
+			updateLi:updateLi
+		};
+
+	})();
+	
+
+	// document.querySelector(".jumbo.index .container .rectangle").classList.add("fadeIn");
+	classie.add(document.querySelector(".jumbo.index .container .rectangle"), 'fadeIn');
+
+
+
+
+	</script><!--
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-68651247-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>	-->		
+</body>
+</html>
