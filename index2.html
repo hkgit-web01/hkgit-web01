@@ -242,17 +242,15 @@
 				// tempLi.childNodes[0].nodeValue = notice[i].title;
 				var tempSpan = document.createElement("span");
 				// tempSpan.childNodes[0].nodeValue = notice[i].date;
-				tempLi.appendChild(document.createTextNode(notice[i].title));
+				tempLi.innerHTML = notice[i].title;
 				classie.add(tempLi, "notice");
-				tempSpan.appendChild(document.createTextNode(notice[i].date));
-				tempLi.appendChild(tempSpan)
+				tempSpan.innerHTML = notice[i].date;
+				tempLi.appendChild(tempSpan);
 				domFrag.appendChild(tempLi);
 				// alert(domFrag.childNodes[0]);
 			}
 
 			var domNoticeUl = document.getElementById("noticeUl");
-			domNoticeUl.innerHTML ="can you see me now???";
-			alert(domNoticeUl.innerHTML);
 			domNoticeUl.appendChild(domFrag);
 			classie.add(domNoticeUl.children[0], "selected");
 
