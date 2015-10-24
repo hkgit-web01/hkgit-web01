@@ -233,7 +233,6 @@
 		var noticeRef = myFirebaseRef.child("notice");
 
 		noticeRef.orderByKey().limitToLast(5).once("value", function(data) {
-			alert(data.val().reverse());
 			notice = data.val().reverse();
 
 			//init
@@ -248,6 +247,7 @@
 				tempSpan.appendChild(document.createTextNode(notice[i].date));
 				tempLi.appendChild(tempSpan)
 				domFrag.appendChild(tempLi);
+				alert(domFrag);
 			}
 
 			var domNoticeUl = document.getElementById("noticeUl");
