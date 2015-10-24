@@ -203,7 +203,6 @@
 			var noticeRef = myFirebaseRef.child("notice");
 
 			noticeRef.orderByKey().limitToLast(5).once("value", function(data) {
-				console.log(data.val().reverse());
 				notice = data.val().reverse();
 
 				//init
@@ -217,7 +216,7 @@
 					classie.add(tempLi, "notice");
 					tempSpan.innerHTML = notice[i].date;
 					var tempP = document.createElement("p");
-					tempP.innerHTML = notice[i].content;
+					tempP.innerHTML = notice[i]["content"];
 					tempLi.appendChild(tempSpan);
 					tempLi.appendChild(tempP);
 					domFrag.appendChild(tempLi);
@@ -242,8 +241,6 @@
 
 			var update = function(num){
 				var obj = notice[num];
-				console.log(obj);
-				console.log(domNoticeContentHeader);
 				domNoticeContentHeader.childNodes[0].nodeValue = obj["title"];
 				domNoticeContentP.childNodes[0].nodeValue = obj["content"];
 			};

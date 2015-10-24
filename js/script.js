@@ -107,7 +107,6 @@ if (document.querySelectorAll(".jumboContent").length) {
 					$(domFig.children[i]).animate({
 						opacity:0,
 					}, 800);
-					console.log("fading out");
 				}
 			}
 			// domFig.children[0].classList.add("show");
@@ -118,7 +117,6 @@ if (document.querySelectorAll(".jumboContent").length) {
 				$(domFig.children[0]).animate({
 					opacity:1,
 				},800);
-				console.log("fading in");
 			}
 			
 
