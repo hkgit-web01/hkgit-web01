@@ -145,7 +145,7 @@
 					<div class="row notice">
 						<div class="six columns">
 							<h5 class="kr">Birthday 공지사항</h5>
-							<ul><!----></ul>
+							<ul id="noticeUl"><!----></ul>
 						</div>	
 						<div class="six columns noticeContent">
 							<div>
@@ -246,11 +246,11 @@
 				tempLi.appendChild(document.createTextNode(notice[i].title));
 				classie.add(tempLi, "notice");
 				tempSpan.appendChild(document.createTextNode(notice[i].date));
-				tempLi.appendChild(tempSpan);
+				tempLi.appendChild(tempSpan)
 				domFrag.appendChild(tempLi);
 			}
 
-			var domNoticeUl = document.querySelector(".notice ul");
+			var domNoticeUl = document.getElementById("noticeUl");
 			domNoticeUl.appendChild(domFrag);
 			classie.add(domNoticeUl.children[0], "selected");
 
@@ -305,7 +305,7 @@
 
 
 
-	</script>
+	</script><!--
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -315,6 +315,6 @@
 	  ga('create', 'UA-68651247-1', 'auto');
 	  ga('send', 'pageview');
 
-	</script>			
+	</script>	-->		
 </body>
 </html>
