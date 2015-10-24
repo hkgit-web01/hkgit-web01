@@ -85,18 +85,41 @@ if (document.querySelectorAll(".jumboContent").length) {
 		var next = function() {
 			if (current == dom.length-1) current = 0;
 			else current += 1;
-			styleHandle.marginTop = "-" + current + "00%";
+			if(Modernizr.csstransitions) {
+				styleHandle.marginTop = "-" + current + "00%";
+			}
+			else {
+				$(dom[0]).animate({
+					marginTop: "-" + current + "00%"
+				}, 800);
+			}
 
 			// console.log(domFig.children[current]);
 			// console.log(domFig.children[0]);
 			domFig.insertBefore(imageHandle[current], domFig.children[0]);
 
-			for(var i = 0; i < domFig.children.length; i++){
+			for(var i = 1; i < domFig.children.length; i++){
 				// domFig.children[i].classList.remove("show");
-				classie.remove(domFig.children[i], 'show');
+				if (Modernizr.csstransitions) {
+					classie.remove(domFig.children[i], 'show');
+				}
+				else {
+					$(domFig.children[i]).animate({
+						opacity:0,
+					}, 800);
+					console.log("fading out");
+				}
 			}
 			// domFig.children[0].classList.add("show");
-			classie.add(domFig.children[0], 'show');
+			if (Modernizr.csstransitions) {
+				classie.add(domFig.children[0], 'show');
+			}
+			else {
+				$(domFig.children[0]).animate({
+					opacity:1,
+				},800);
+				console.log("fading in");
+			}
 			
 
 		};
