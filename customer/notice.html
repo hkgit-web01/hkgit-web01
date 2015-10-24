@@ -158,7 +158,7 @@
 
 					<div class="row">
 						<div class="twelve columns notice full">
-							<ul></ul>
+							<ul id="noticeUl"></ul>
 						</div>
 					</div>
 
@@ -213,17 +213,17 @@
 					// tempLi.childNodes[0].nodeValue = notice[i].title;
 					var tempSpan = document.createElement("span");
 					// tempSpan.childNodes[0].nodeValue = notice[i].date;
-					tempLi.appendChild(document.createTextNode(notice[i].title));
+					tempLi.innerHTML = notice[i].title;
 					classie.add(tempLi, "notice");
-					tempSpan.appendChild(document.createTextNode(notice[i].date));
+					tempSpan.innerHTML = notice[i].date;
 					var tempP = document.createElement("p");
-					tempP.appendChild(document.createTextNode(notice[i].content));
+					tempP.innerHTML = notice[i].content;
 					tempLi.appendChild(tempSpan);
 					tempLi.appendChild(tempP);
 					domFrag.appendChild(tempLi);
 				}
 
-				var domNoticeUl = document.querySelector(".notice ul");
+				var domNoticeUl = document.getElementById("noticeUl");
 				domNoticeUl.appendChild(domFrag);
 
 				domNoticeLi = document.querySelectorAll("li.notice");
@@ -244,8 +244,8 @@
 				var obj = notice[num];
 				console.log(obj);
 				console.log(domNoticeContentHeader);
-				domNoticeContentHeader.childNodes[0].nodeValue = obj.title;
-				domNoticeContentP.childNodes[0].nodeValue = obj.content;
+				domNoticeContentHeader.childNodes[0].nodeValue = obj["title"];
+				domNoticeContentP.childNodes[0].nodeValue = obj["content"];
 			};
 
 			var updateLi = function(num){
