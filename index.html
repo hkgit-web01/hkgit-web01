@@ -277,7 +277,7 @@
 		var update = function(num){
 			var obj = notice[num];
 			domNoticeContentHeader.childNodes[0].nodeValue = obj["title"];
-			domNoticeContentP.childNodes[0].nodeValue = obj["content"];
+			domNoticeContentP.innerHTML = obj["content"];
 		};
 
 		var updateLi = function(num){
