@@ -1224,13 +1224,13 @@ main article.index .bigButton p {
 
 .pCard .rectangle p.morning {
 	border:none;
-	height:40px;
+	height:70px;
 	margin-bottom:10px;
 }
 
 .pCard .rectangle p.afternoon {
 	border-top:4px solid #EFEFEF;
-	height:70px;
+	height:40px;
 	background-color: #87786B;
 	color:white; 
 	margin-bottom:0;
