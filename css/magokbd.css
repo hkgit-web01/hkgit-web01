@@ -1545,3 +1545,17 @@ form textarea {
 		-webkit-transform: translateY(-150px);
 	}
 }
+
+table.rate-table {
+	width: 100%;
+	font-size: 13px;
+	font-family: 'Jeju Myeongjo', serif;
+}
+
+.rate-table th {
+	text-align: center;
+}
+
+.rate-table td {
+	padding-left: 10px;
+}
